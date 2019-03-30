@@ -20,6 +20,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <script src="js/p5/p5.min.js"></script>
+        <script src="js/p5/p5.dom.min.js"></script>
+        <script src="js/p5/p5.sound.min.js"></script>
+        <script src="js/p5/index.js"></script>
+        <style>
+      canvas { 
+       position:absolute; 
+       top:0; 
+       left:0; 
+       width:100%; 
+       height:100%; 
+       z-index:-1; 
+      } 
+        </style>
     </head>
 
     <body>
@@ -27,7 +41,6 @@
         <!-- Preloader -->
         <div id="preloader">
             <div id="status">
-
                 <div class="preloader" aria-busy="true" aria-label="Loading,
                     please wait." role="progressbar">
                 </div>
@@ -48,102 +61,47 @@
         </header>
         <!-- ./header -->
 
-        <!-- home -->
-        <div class="section" id="home" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="disply-table">
-                    <div class="table-cell" data-aos="fade-up"
-                        data-aos-delay="0">
-                        <!-- <h4>portofolio</h4> -->
-                        <h1>Bao<br/> Yi Fang</h1> </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./home -->
+        <div class="container">
 
-            <!-- about -->
-            <div class="section" id="about">
-                <div class="container">
-                    <div class="col-md-8" data-aos="fade-up">
-                        <h4>01</h4>
-                        <h1 class="size-50">Skills</h1>
-                        <div class="h-50"></div>
-                        <p>优势：用户研究与创新，数据可视化及分析，网页设计与编程，图表绘制及报告撰写，产品及品牌设计，逻辑与思辨</p><br>
-                        <p>课程：用户研究与创新，设计研究与写作，大数据可视化分析导论，系统创新与设计，数据信息可视化整合Studio，创意编程（P5），设计心理学，网页设计，设计管理，行远书院批判性课程（大学之道、日常物理、中国传统文化、世界文明史）</p>
-                        <br>
-                        <p>设计工具：illustrator：5* / Photoshop：4* / Rhino：4* /
-                            P5.js：4*/... <br>分析工具：Excel：5* / Tableau：4* /
-                            Rstudio：3* / D3.js：2*/... <br>报告工具：Keynote：5* /
-                            Word：5*
-                            / Powerpoint：5*/... <br>编程语言：html：4* /css:：4* /
-                            js：2*
-                            /... <br>原型工具：Adobe XD: 5*/Axture：2*/Sketch：2*/...
-                        </p>
-                        <!-- <div class="h-50"></div> <img src="img/Signature.svg"
-                            width="230" alt="" />
-                        <div class="h-50"></div> -->
-                    </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-6"><h1>Bao<br/> Yi Fang</h1><br><br>
+                        <p class='textcover'>优势：用户研究与创新，数据可视化及分析，网页设计与编程，图表绘制及报告撰写，产品及品牌设计，逻辑与思辨</p>
+                        <p class="timeline-event-thumbnail">EDUCATION</p>
+                        <p class='textedu'>2020.07
+                            - 2017.09同济大学，在读硕士生</h5>
+                        <p class='textcover'>上海国际设计与创新学院，设计人工智能实验室，媒体与传达设计，在读硕士生，上海，GPA：4.57<br><strong>实践经历</strong>参与《设计与人工智能2018》报告的撰写，参与同济紫荆谷创业项目夏令营，自主创业实践首饰设计及品牌建立</p>
+                        <h3 class='textedu'>2019.08 - 2018.09米兰理工大学，在读双学位</h3>
+                        <p class='textcover'>米兰理工大学，传达设计，在读双学位硕士，米兰<br></p>
+                        <h3 class='textedu'>2017.06 - 2013.09中国海洋大学，学士学位</h3>
+                        <p class='textcover'>工程学院，工业设计，学士学位，青岛，年级排名：1<br><strong>实践经历
+                            </strong>
+                            校大学生自主创业项目“依梦摄影工作室”设计总监， 行远书院大学之道课程助教，
+                            班级学习委员，院学生会志愿者服务部志愿者</p></div>
                     <div class="col-md-4 about-img-div">
                         <div class="about-border" data-aos="fade-up"
                             data-aos-delay=".5"></div>
-                        <img src="img/about-img.jpg" width="400"
+                        <img src="img/about-img.jpg" width="220"
                             class="img-responsive" alt="" align="right"
-                            data-aos="fade-right" data-aos-delay="0" />
-                    </div>
+                            data-aos="fade-right" data-aos-delay="0" /> </div>
                 </div>
-            </div>
-            <!-- ./about -->
 
-            <!-- experience  -->
-            <div class="section" id="experience">
-                <div class="container">
-                    <div class="col-md-12">
-                        <h4>02</h4>
-                        <h1 class="size-50">Education</h1>
-                        <div class="h-50"></div>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="timeline">
-                            <li class="timeline-event" data-aos="fade-up">
-                                <label class="timeline-event-icon"></label>
-                                <div class="timeline-event-copy">
-                                    <p class="timeline-event-thumbnail">2020.07
-                                        - 2017.09</p>
-                                    <h3>同济大学，在读硕士生</h3>
-                                    <p>上海国际设计与创新学院，设计人工智能实验室，媒体与传达设计，在读硕士生，上海，GPA：4.57<br><strong>实践经历
-                                        </strong>
-                                        参与《设计与人工智能2018》报告的撰写，参与同济紫荆谷创业项目夏令营，自主创业实践
-                                        IN See / Zoo.O / YIFANG 首饰设计及品牌建立</p>
-                                </div>
-                            </li>
-                            <li class="timeline-event" data-aos="fade-up"
-                                data-aos-delay=".2">
-                                <label class="timeline-event-icon"></label>
-                                <div class="timeline-event-copy">
-                                    <p class="timeline-event-thumbnail"> 2019.08
-                                        - 2018.09</p>
-                                    <h3>米兰理工大学，在读双学位</h3>
-                                    <p>米兰理工大学，传达设计，在读双学位硕士，米兰<br></p>
-                                </div>
-                            </li>
-                            <li class="timeline-event" data-aos="fade-up"
-                                data-aos-delay=".4">
-                                <label class="timeline-event-icon"></label>
-                                <div class="timeline-event-copy">
-                                    <p class="timeline-event-thumbnail">2017.06
-                                        - 2013.09</p>
-                                    <h3>中国海洋大学，学士学位</h3>
-                                    <p>工程学院，工业设计，学士学位，青岛，年级排名：1<br><strong>实践经历
-                                        </strong>
-                                        校大学生自主创业项目“依梦摄影工作室”设计总监， 行远书院大学之道课程助教，
-                                        班级学习委员，院学生会志愿者服务部志愿者</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <p class='textcover'>设计工具：illustrator：5* / Photoshop：4* /
+                    Rhino：4* /
+                    P5.js：4*/... <br>分析工具：Excel：5* / Tableau：4* /
+                    Rstudio：3* / D3.js：2*/... <br>报告工具：Keynote：5* /
+                    Word：5*
+                    / Powerpoint：5*/... <br>编程语言：html：4* /css:：4* /
+                    js：2*
+                    /... <br>原型工具：Adobe XD: 5*/Axture：2*/Sketch：2*/...
+                </p>
+                <p class='textcover'>
+                    2018 Co-Knitting课程项目被英国Fixperts组织选中参展2019米兰三年展<br>
+                    2017 第二届“国艺杯”两岸艺术设计邀请展学生组银奖<br>
+                    2016 国家奖学金,第十三届山东省机电产品创新设计大赛二等奖,科技创新奖学金,优秀学生<br>
+                    2015 洪秀全故居纪念馆馆徽设计大赛优秀奖,中国海洋大学工程学院“感动工程”人物<br>
+                    2014 国家奖学金,军训先进个人<br>
+                </p>
             </div>
-            <!-- ./experience -->
 
             <!-- projects -->
             <div class="section" id="projects">
@@ -165,10 +123,12 @@
                                                     data-filter="*">All</a></li>
                                             <li><a href=""
                                                     data-filter=".photography">Photography</a></li>
-                                            <li><a href="" data-filter=".logo">Logo</a></li>
+                                            <li><a href=""
+                                                    data-filter=".logo">Logo</a></li>
                                             <li><a href=""
                                                     data-filter=".graphics">Graphics</a></li>
-                                            <li><a href="" data-filter=".ads">Advertising</a></li>
+                                            <li><a href=""
+                                                    data-filter=".ads">Advertising</a></li>
                                             <li><a href=""
                                                     data-filter=".fashion">Fashion</a></li>
                                         </ul>
@@ -181,14 +141,16 @@
                                     clearfix"
                                     data-aos="fade-up">
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 fashion logo">
+                                    <div class="col-md-4 col-sm-6 fashion
+                                        logo">
                                         <a href="demo01.html"
                                             class="portfolio_item">
                                             <img src="img/portfolio/01.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
@@ -202,14 +164,16 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 ads graphics">
+                                    <div class="col-md-4 col-sm-6 ads
+                                        graphics">
                                         <a href="demo02.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/03.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
@@ -244,14 +208,16 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 fashion ads">
+                                    <div class="col-md-4 col-sm-6 fashion
+                                        ads">
                                         <a href="demo04.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/04.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
@@ -265,14 +231,16 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 graphics ads">
+                                    <div class="col-md-4 col-sm-6 graphics
+                                        ads">
                                         <a href="demo05.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/05.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
@@ -286,14 +254,16 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 photography">
+                                    <div class="col-md-4 col-sm-6
+                                        photography">
                                         <a href="demo06.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/010.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
@@ -307,19 +277,22 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 graphics ads">
+                                    <div class="col-md-4 col-sm-6 graphics
+                                        ads">
                                         <a href="demo07.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/06.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
                                                         <span>中国珠宝市场研究及珠宝设计创业项目（In.See
-                                                            和Zoo.O）</span> <em>2017.12-2016.10</em>
+                                                            和Zoo.O）</span>
+                                                        <em>2017.12-2016.10</em>
                                                     </div>
                                                 </div>
                                             </div>
@@ -349,14 +322,16 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 graphics ads">
+                                    <div class="col-md-4 col-sm-6 graphics
+                                        ads">
                                         <a href="demo09.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/08.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
@@ -412,14 +387,16 @@
                                     <!-- end single work -->
 
                                     <!-- single work -->
-                                    <div class="col-md-4 col-sm-6 graphics ads">
+                                    <div class="col-md-4 col-sm-6 graphics
+                                        ads">
                                         <a ref="demo12.html"
                                             class="portfolio_item"> <img
                                                 src="img/portfolio/08.jpg"
                                                 alt="image"
                                                 class="img-responsive"
                                                 />
-                                            <div class="portfolio_item_hover">
+                                            <div
+                                                class="portfolio_item_hover">
                                                 <div class="portfolio-border
                                                     clearfix">
                                                     <div class="item_info">
