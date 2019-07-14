@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
           var country = nodeData["country"];
           var type = nodeData["type"];
           var ranking = nodeData[nDate];
+          console.log(nodeData)
           var text = nDomin + "<br>" + country + "<br>" + type + "<br>" + nDate + " ranking: " + ranking;
           div.html(text)
             .style("left", (d3.event.pageX + 5)  + "px")
