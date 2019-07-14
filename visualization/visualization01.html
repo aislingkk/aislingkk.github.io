@@ -1,0 +1,15 @@
+<!-- //TODO change the button style -->
+<div id="visualization01">
+  <div class="btn-group" id="button" style="position:top">
+    <button class="btn" id="btn-alexaranking01">左对齐</button>
+    <button class="btn" id="btn-alexaranking02">居中</button>
+  </div>
+  <!-- Add the HTML code for your visualization here -->
+<div id="svg-alexaranking01" >
+  {% include out/alexaranking01.svg %}
+</div>
+<div id="svg-alexaranking02" style="display: none">
+  {% include out/alexaranking02.svg %}
+</div>
+</div>
+<script src="{{ '/assets/js/visualization01.js' | relative_url }}" charset="utf-8"></script>
