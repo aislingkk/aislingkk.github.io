@@ -1,9 +1,9 @@
 html {
-  --color-main: #e4007c;
+  --color-main: #b3dbe8;
   --color-dark: #0c0a01;
   --color-light: #fbfef9;
-  --font-display: 'Archivo Black', sans-serif;
-  --font-text: 'Chivo', sans-serif; }
+  --font-display: 'Georgia', sans-serif;
+  --font-text: 'Georgia', sans-serif; }
 
 .display {
   font-family: var(--font-display); }
@@ -829,23 +829,17 @@ footer {
     grid-row: 1 / 13; }
 
   .cover__background {
-    grid-column: 8 / 15;
     grid-row: 1 / 13; }
 
   .cover__heading {
-    grid-column: 9 / 11;
     grid-row: 2 / 3; }
 
   .cover__title {
-    grid-column: 9 / 14;
     grid-row: 4 / 11;
     margin: 0; }
 
   .cover__title br {
     display: inline; }
-
-  .cover__subtitle {
-    grid-column: 9 / 14; }
 
   .intro p {
     font-size: 1.8rem; }

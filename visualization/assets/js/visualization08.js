@@ -1,6 +1,6 @@
 document.querySelector('body').setAttribute('style', 'background:#F0F0F2;');
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('svg').setAttribute('style', 'width: 245%;');
+  document.querySelector('svg').setAttribute('style', 'width: 310%;');
   document.querySelector('#world-all').scrollLeft = 10000;
 });
 

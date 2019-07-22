@@ -9,14 +9,14 @@
     <!-- Meta tags for social networks -->
     <meta property="og:title" content="How about the type and place of the Chinese Internet Unicorns?">
     <meta property="og:description" content="Short description of the document for the meta tags (limit to 150 characters, longer will be cut by search engines)">
-    <meta property="og:image" content="https://densitydesign.github.iohttp://localhost:4000/assets/images/covers/stock03_cover.png">
+    <meta property="og:image" content="https://densitydesign.github.iohttp://localhost:4000/assets/images/covers/unicorn.png">
     <meta property="og:url" content="https://densitydesign.github.iohttp://localhost:4000/question06">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400,700" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
         href="/assets/images/favicons/favicon144.png">
@@ -33,40 +33,44 @@
 
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/custom-styles.css">
+   
 </head>
 
 <body>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/d3.min.js" charset="utf-8"></script>
+    <script src="/assets/js/custom-scripts.js" charset="utf-8"></script>
     <nav>
     <div class="nav__background"></div>
     <div class="nav__background"></div>
     <div class="nav__container">
         
-        <img class="nav__background-image" src="/assets/images/covers/alexaranking_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/alexa.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock01_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/stock01.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock02_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/stock02.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/stock03.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/founder.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/unicorn.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/unicorn2.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/word.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/word2.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/map.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/tencent.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/ali.png" alt="Preview visualization of research question">
         
         <div class="index">
-            <h3 class="display index__heading index__title">Chinese Internet Company</h3>
+            <h3 class="display index__heading index__title">Data Visualization of Chinese Internet Company</h3>
             <p class="index__heading index__link"><a href="/">Introduction</a></p>
             <h4 class="index__heading index__subtitle">research questions</h4>
             <ul class="index__list">
@@ -108,15 +112,15 @@
                 </li>
                 
                 <li class="index__item">
-                    <a href="/question10.html" > word-all2 </a>
+                    <a href="/question10.html" > How about the historical registration situation of Chinese Internet companies? </a>
                 </li>
                 
                 <li class="index__item">
-                    <a href="/question11.html" > alibabagroup </a>
+                    <a href="/question11.html" > How about the China's leading Internet company of Tencent? </a>
                 </li>
                 
                 <li class="index__item">
-                    <a href="/question12.html" > tencent </a>
+                    <a href="/question12.html" > How about the China's leading Internet company of Alibaba Group? </a>
                 </li>
                 
             </ul>
@@ -150,9 +154,10 @@
 <main class="question__visualization">
     <div id="visualization06" >
     <div id="unicorn" >
-        <svg version="1.1" 
-	xmlns="http://www.w3.org/2000/svg" 
-	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6564.8 5534.2" style="enable-background:new 0 0 6564.8 5534.2;" xml:space="preserve">
+        <svg version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6564.8
+	5534.2" style="enable-background:new 0 0 6564.8 5534.2;" xml:space="preserve">
 	<style type="text/css">
 	.st0{fill:#F7F7F7;}
 	.st1{opacity:0.4;fill:none;stroke:#9D9B9E;stroke-width:3.1043;stroke-miterlimit:10;enable-background:new    ;}
@@ -454,140 +459,160 @@
 			<g transform="translate(-2335.13157895,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3495.113 -25.6766)" class="st14 st15 st16 st17">Education</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3495.113 -25.6766)"
+							class="st14 st15 st16 st17">Education</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-2335.13157895,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3183.7566 -25.6766)" class="st14 st15 st16 st17">(Field)</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3183.7566 -25.6766)"
+							class="st14 st15 st16 st17">(Field)</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-2078.4502924,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3475.627 -26.3426)" class="st14 st15 st16 st17">E-commerce</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3475.627 -26.3426)"
+							class="st14 st15 st16 st17">E-commerce</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-1821.76900585,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3498.3115 -27.1268)" class="st14 st15 st16 st17">Enterprise service</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3498.3115 -27.1268)"
+							class="st14 st15 st16 st17">Enterprise service</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-1565.0877193,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3503.105 -27.8612)" class="st14 st15 st16 st17">Entertainment media</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3503.105 -27.8612)"
+							class="st14 st15 st16 st17">Entertainment media</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-1308.40643275,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3534.2644 -27.868)" class="st14 st15 st16 st17">Tool software</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3534.2644 -27.868)"
+							class="st14 st15 st16 st17">Tool software</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-1051.7251462,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3551.9058 -31.9959)" class="st14 st15 st16 st17">Agricultural</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3551.9058 -31.9959)"
+							class="st14 st15 st16 st17">Agricultural</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-795.04385965,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3564.5471 -29.3934)" class="st14 st15 st16 st17">Car traffic</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3564.5471 -29.3934)"
+							class="st14 st15 st16 st17">Car traffic</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-538.3625731,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3568.2351 -30.9246)" class="st14 st15 st16 st17">Estate service</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3568.2351 -30.9246)"
+							class="st14 st15 st16 st17">Estate service</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-281.68128655,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3595.2834 -31.659)" class="st14 st15 st16 st17">Finance</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3595.2834 -31.659)"
+							class="st14 st15 st16 st17">Finance</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(-25,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3613.1152 -31.6903)" class="st14 st15 st16 st17">Game</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3613.1152 -31.6903)"
+							class="st14 st15 st16 st17">Game</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(231.68128655,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3615.3523 -32.9442)" class="st14 st15 st16 st17">Hardware</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3615.3523 -32.9442)"
+							class="st14 st15 st16 st17">Hardware</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(488.3625731,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3630.4167 -33.7293)" class="st14 st15 st16 st17">Local life</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3630.4167 -33.7293)"
+							class="st14 st15 st16 st17">Local life</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(745.04385965,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3642.5984 -34.4842)" class="st14 st15 st16 st17">Logistics</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3642.5984 -34.4842)"
+							class="st14 st15 st16 st17">Logistics</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(1001.7251462,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3649.6465 -36.2703)" class="st14 st15 st16 st17">Marketing</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3649.6465 -36.2703)"
+							class="st14 st15 st16 st17">Marketing</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(1258.40643275,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3649.6313 -36.9901)" class="st14 st15 st16 st17">Medical health</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3649.6313 -36.9901)"
+							class="st14 st15 st16 st17">Medical health</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(1515.0877193,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3666.3042 -37.7586)" class="st14 st15 st16 st17">New industry</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3666.3042 -37.7586)"
+							class="st14 st15 st16 st17">New industry</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(1771.76900585,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3695.7983 -37.1385)" class="st14 st15 st16 st17">Social</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3695.7983 -37.1385)"
+							class="st14 st15 st16 st17">Social</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(2028.4502924,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3706.6938 -37.8895)" class="st14 st15 st16 st17">Sports</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3706.6938 -37.8895)"
+							class="st14 st15 st16 st17">Sports</text>
 					</g>
 				</g>
 			</g>
 			<g transform="translate(2285.13157895,1383)">
 				<g>
 					<g>
-						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3721.8545 -38.4803)" class="st14 st15 st16 st17">Travel</text>
+						<text transform="matrix(0.645 -0.7642 0.7756 0.6312 3721.8545 -38.4803)"
+							class="st14 st15 st16 st17">Travel</text>
 					</g>
 				</g>
 			</g>
@@ -595,69 +620,82 @@
 		<g transform="translate(0,0)">
 			<g transform="translate(-2458,-1370.1531826)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3164.95)" class="st14 st15 st16 st17">Anhui</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3164.95)" class="st14 st15 st16
+						st17">Anhui</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-1130.3168951)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3207.9563)" class="st14 st15 st16 st17">Beijing</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3207.9563)" class="st14 st15 st16
+						st17">Beijing</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-890.4806076)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3254.8174)" class="st14 st15 st16 st17">Chongqing</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3254.8174)" class="st14 st15 st16
+						st17">Chongqing</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-650.6443201)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3301.6792)" class="st14 st15 st16 st17">Guangdong</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3301.6792)" class="st14 st15 st16
+						st17">Guangdong</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-410.8080326)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3348.5413)" class="st14 st15 st16 st17">Guizhou</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3348.5413)" class="st14 st15 st16
+						st17">Guizhou</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-170.9717451)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3395.4021)" class="st14 st15 st16 st17">Hongkong</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3395.4021)" class="st14 st15 st16
+						st17">Hongkong</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,68.8645424)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3442.2642)" class="st14 st15 st16 st17">Hubei</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3442.2642)" class="st14 st15 st16
+						st17">Hubei</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,308.7008299)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3489.125)" class="st14 st15 st16 st17">Jiangsu</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3489.125)" class="st14 st15 st16
+						st17">Jiangsu</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,548.5371174)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3535.9871)" class="st14 st15 st16 st17">Shandong</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3535.9871)" class="st14 st15 st16
+						st17">Shandong</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,788.3734049)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3582.8494)" class="st14 st15 st16 st17">Shanghai</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3582.8494)" class="st14 st15 st16
+						st17">Shanghai</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1028.2096924)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3629.71)" class="st14 st15 st16 st17">Sichuan</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3629.71)" class="st14 st15 st16
+						st17">Sichuan</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1268.0459799)">
 				<g>
-					<text transform="matrix(1 0 0 1 2678.1106 3676.573)" class="st14 st15 st16 st17">Zhejiang</text>
+					<text transform="matrix(1 0 0 1 2678.1106 3676.573)" class="st14 st15 st16
+						st17">Zhejiang</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1268.0459799)">
 				<g>
 					<g>
 						<g>
-							<text transform="matrix(1 0 0 1 2678.1106 76.474)" class="st14 st15 st16 st17">(Address)</text>
+							<text transform="matrix(1 0 0 1 2678.1106 76.474)" class="st14 st15 st16
+								st17">(Address)</text>
 						</g>
 					</g>
 				</g>
@@ -667,62 +705,74 @@
 			<g>
 				<g transform="translate(-2458,-1370.1531826)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8701.3887 3154.4148)" class="st18 st15 st19">2</text>
+						<text transform="matrix(0.9898 0 0 1 8701.3887 3154.4148)" class="st18
+							st15 st19">2</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,-1130.3168951)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8671.1104 3197.4204)" class="st18 st15 st19">94</text>
+						<text transform="matrix(0.9898 0 0 1 8671.1104 3197.4204)" class="st18
+							st15 st19">94</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,-890.4806076)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8707.7842 3244.2825)" class="st18 st15 st19">1</text>
+						<text transform="matrix(0.9898 0 0 1 8707.7842 3244.2825)" class="st18
+							st15 st19">1</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,-650.6443201)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8678.5234 3291.1443)" class="st18 st15 st19">31</text>
+						<text transform="matrix(0.9898 0 0 1 8678.5234 3291.1443)" class="st18
+							st15 st19">31</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,-410.8080326)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8701.3887 3338.0054)" class="st18 st15 st19">2</text>
+						<text transform="matrix(0.9898 0 0 1 8701.3887 3338.0054)" class="st18
+							st15 st19">2</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,-170.9717451)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8701.7275 3384.8672)" class="st18 st15 st19">3</text>
+						<text transform="matrix(0.9898 0 0 1 8701.7275 3384.8672)" class="st18
+							st15 st19">3</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,68.8645424)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8702.8906 3431.7292)" class="st18 st15 st19">5</text>
+						<text transform="matrix(0.9898 0 0 1 8702.8906 3431.7292)" class="st18
+							st15 st19">5</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,308.7008299)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8675.4473 3478.5901)" class="st18 st15 st19">10</text>
+						<text transform="matrix(0.9898 0 0 1 8675.4473 3478.5901)" class="st18
+							st15 st19">10</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,548.5371174)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8701.3887 3525.4521)" class="st18 st15 st19">2</text>
+						<text transform="matrix(0.9898 0 0 1 8701.3887 3525.4521)" class="st18
+							st15 st19">2</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,788.3734049)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8671.1592 3572.3142)" class="st18 st15 st19">44</text>
+						<text transform="matrix(0.9898 0 0 1 8671.1592 3572.3142)" class="st18
+							st15 st19">44</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,1028.2096924)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8701.0742 3619.175)" class="st18 st15 st19">4</text>
+						<text transform="matrix(0.9898 0 0 1 8701.0742 3619.175)" class="st18 st15
+							st19">4</text>
 					</g>
 				</g>
 				<g transform="translate(-2458,1268.0459799)">
 					<g>
-						<text transform="matrix(0.9898 0 0 1 8673.291 3666.0378)" class="st18 st15 st19">25</text>
+						<text transform="matrix(0.9898 0 0 1 8673.291 3666.0378)" class="st18 st15
+							st19">25</text>
 					</g>
 				</g>
 			</g>
@@ -730,248 +780,317 @@
 		<g transform="translate(0,0)">
 			<g transform="translate(-2458,-1370.1531826)">
 				<g>
-					<text transform="matrix(1 0 0 1 3098.1206 3154.4148)" class="st14 st15 st16 st17">31</text>
+					<text transform="matrix(1 0 0 1 3098.1206 3154.4148)" class="st14 st15 st16
+						st17">31</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-1130.3168951)">
 				<g>
-					<text transform="matrix(1 0 0 1 3098.1211 3197.4202)" class="st14 st15 st16 st17">3761</text>
+					<text transform="matrix(1 0 0 1 3098.1211 3197.4202)" class="st14 st15 st16
+						st17">3761</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-890.4806076)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6733 3244.2822)" class="st14 st15 st16 st17">15</text>
+					<text transform="matrix(1 0 0 1 3097.6733 3244.2822)" class="st14 st15 st16
+						st17">15</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-650.6443201)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6733 3291.144)" class="st14 st15 st16 st17">1027</text>
+					<text transform="matrix(1 0 0 1 3097.6733 3291.144)" class="st14 st15 st16
+						st17">1027</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-410.8080326)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6738 3338.0051)" class="st14 st15 st16 st17">81</text>
+					<text transform="matrix(1 0 0 1 3097.6738 3338.0051)" class="st14 st15 st16
+						st17">81</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-170.9717451)">
 				<g>
-					<text transform="matrix(1 0 0 1 3098.1206 3384.8669)" class="st14 st15 st16 st17">35</text>
+					<text transform="matrix(1 0 0 1 3098.1206 3384.8669)" class="st14 st15 st16
+						st17">35</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,68.8645424)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6733 3431.729)" class="st14 st15 st16 st17">85</text>
+					<text transform="matrix(1 0 0 1 3097.6733 3431.729)" class="st14 st15 st16
+						st17">85</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,308.7008299)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6733 3478.5898)" class="st14 st15 st16 st17">267</text>
+					<text transform="matrix(1 0 0 1 3097.6733 3478.5898)" class="st14 st15 st16
+						st17">267</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,548.5371174)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6738 3525.4519)" class="st14 st15 st16 st17">45</text>
+					<text transform="matrix(1 0 0 1 3097.6738 3525.4519)" class="st14 st15 st16
+						st17">45</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,788.3734049)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6738 3572.3142)" class="st14 st15 st16 st17">1482</text>
+					<text transform="matrix(1 0 0 1 3097.6738 3572.3142)" class="st14 st15 st16
+						st17">1482</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1028.2096924)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6738 3619.1748)" class="st14 st15 st16 st17">63</text>
+					<text transform="matrix(1 0 0 1 3097.6738 3619.1748)" class="st14 st15 st16
+						st17">63</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1268.0459799)">
 				<g>
-					<text transform="matrix(1 0 0 1 3097.6738 3666.0378)" class="st14 st15 st16 st17">2798</text>
+					<text transform="matrix(1 0 0 1 3097.6738 3666.0378)" class="st14 st15 st16
+						st17">2798</text>
 				</g>
 			</g>
 		</g>
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 1124.1992 5271.0137)" class="st18 st15 st19">14</text>
+					<text transform="matrix(0.9898 0 0 1 1124.1992 5271.0137)" class="st18 st15
+						st19">14</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 1390.3047 5271.0137)" class="st18 st15 st19">19</text>
+					<text transform="matrix(0.9898 0 0 1 1390.3047 5271.0137)" class="st18 st15
+						st19">19</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 1659.7441 5271.0137)" class="st18 st15 st19">27</text>
+					<text transform="matrix(0.9898 0 0 1 1659.7441 5271.0137)" class="st18 st15
+						st19">27</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 1935.4141 5271.0137)" class="st18 st15 st19">17</text>
+					<text transform="matrix(0.9898 0 0 1 1935.4141 5271.0137)" class="st18 st15
+						st19">17</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 2226.6943 5271.0137)" class="st18 st15 st19">3</text>
+					<text transform="matrix(0.9898 0 0 1 2226.6943 5271.0137)" class="st18 st15
+						st19">3</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 2502.0254 5271.0137)" class="st18 st15 st19">1</text>
+					<text transform="matrix(0.9898 0 0 1 2502.0254 5271.0137)" class="st18 st15
+						st19">1</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 2729.9521 5271.0137)" class="st18 st15 st19">36</text>
+					<text transform="matrix(0.9898 0 0 1 2729.9521 5271.0137)" class="st18 st15
+						st19">36</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 3006.6982 5271.0137)" class="st18 st15 st19">10</text>
+					<text transform="matrix(0.9898 0 0 1 3006.6982 5271.0137)" class="st18 st15
+						st19">10</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 3272.6533 5271.0137)" class="st18 st15 st19">23</text>
+					<text transform="matrix(0.9898 0 0 1 3272.6533 5271.0137)" class="st18 st15
+						st19">23</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 3572.7266 5271.0137)" class="st18 st15 st19">2</text>
+					<text transform="matrix(0.9898 0 0 1 3572.7266 5271.0137)" class="st18 st15
+						st19">2</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 3841.6387 5271.0137)" class="st18 st15 st19">9</text>
+					<text transform="matrix(0.9898 0 0 1 3841.6387 5271.0137)" class="st18 st15
+						st19">9</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 4109.4102 5271.0137)" class="st18 st15 st19">8</text>
+					<text transform="matrix(0.9898 0 0 1 4109.4102 5271.0137)" class="st18 st15
+						st19">8</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 4346.6738 5271.0137)" class="st18 st15 st19">20</text>
+					<text transform="matrix(0.9898 0 0 1 4346.6738 5271.0137)" class="st18 st15
+						st19">20</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 4649.8242 5271.0137)" class="st18 st15 st19">2</text>
+					<text transform="matrix(0.9898 0 0 1 4649.8242 5271.0137)" class="st18 st15
+						st19">2</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 4885.2227 5271.0137)" class="st18 st15 st19">20</text>
+					<text transform="matrix(0.9898 0 0 1 4885.2227 5271.0137)" class="st18 st15
+						st19">20</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 5188.7129 5271.0137)" class="st18 st15 st19">3</text>
+					<text transform="matrix(0.9898 0 0 1 5188.7129 5271.0137)" class="st18 st15
+						st19">3</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 5457.6484 5271.0137)" class="st18 st15 st19">2</text>
+					<text transform="matrix(0.9898 0 0 1 5457.6484 5271.0137)" class="st18 st15
+						st19">2</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 5733.3184 5271.0137)" class="st18 st15 st19">1</text>
+					<text transform="matrix(0.9898 0 0 1 5733.3184 5271.0137)" class="st18 st15
+						st19">1</text>
 				</g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 5997.5273 5271.0137)" class="st18 st15 st19">6</text>
+					<text transform="matrix(0.9898 0 0 1 5997.5273 5271.0137)" class="st18 st15
+						st19">6</text>
 				</g>
 			</g>
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 1110.7832 1470.7051)" class="st14 st15 st19 st17">233</text>
+				<text transform="matrix(0.9898 0 0 1 1110.7832 1470.7051)" class="st14 st15
+					st19 st17">233</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 1375.2168 1470.7051)" class="st14 st15 st19 st17">306</text>
+				<text transform="matrix(0.9898 0 0 1 1375.2168 1470.7051)" class="st14 st15
+					st19 st17">306</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 1637.9355 1470.7051)" class="st14 st15 st19 st17">1198</text>
+				<text transform="matrix(0.9898 0 0 1 1637.9355 1470.7051)" class="st14 st15
+					st19 st17">1198</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 1904.9434 1470.7051)" class="st14 st15 st19 st17">1292</text>
+				<text transform="matrix(0.9898 0 0 1 1904.9434 1470.7051)" class="st14 st15
+					st19 st17">1292</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 2206.1455 1470.7051)" class="st14 st15 st19 st17">81</text>
+				<text transform="matrix(0.9898 0 0 1 2206.1455 1470.7051)" class="st14 st15
+					st19 st17">81</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 2479.5508 1470.7051)" class="st14 st15 st19 st17">11</text>
+				<text transform="matrix(0.9898 0 0 1 2479.5508 1470.7051)" class="st14 st15
+					st19 st17">11</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 2711.6201 1470.7051)" class="st14 st15 st19 st17">1357</text>
+				<text transform="matrix(0.9898 0 0 1 2711.6201 1470.7051)" class="st14 st15
+					st19 st17">1357</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 2996.7217 1470.7051)" class="st14 st15 st19 st17">276</text>
+				<text transform="matrix(0.9898 0 0 1 2996.7217 1470.7051)" class="st14 st15
+					st19 st17">276</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 3250.3838 1470.7051)" class="st14 st15 st19 st17">2981</text>
+				<text transform="matrix(0.9898 0 0 1 3250.3838 1470.7051)" class="st14 st15
+					st19 st17">2981</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 3548.7266 1470.7051)" class="st14 st15 st19 st17">40</text>
+				<text transform="matrix(0.9898 0 0 1 3548.7266 1470.7051)" class="st14 st15
+					st19 st17">40</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 3806.0713 1470.7051)" class="st14 st15 st19 st17">414</text>
+				<text transform="matrix(0.9898 0 0 1 3806.0713 1470.7051)" class="st14 st15
+					st19 st17">414</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 4091.8184 1470.7051)" class="st14 st15 st19 st17">91</text>
+				<text transform="matrix(0.9898 0 0 1 4091.8184 1470.7051)" class="st14 st15
+					st19 st17">91</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 4342.6582 1470.7051)" class="st14 st15 st19 st17">705</text>
+				<text transform="matrix(0.9898 0 0 1 4342.6582 1470.7051)" class="st14 st15
+					st19 st17">705</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 4625.8242 1470.7051)" class="st14 st15 st19 st17">40</text>
+				<text transform="matrix(0.9898 0 0 1 4625.8242 1470.7051)" class="st14 st15
+					st19 st17">40</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 4880.1406 1470.7051)" class="st14 st15 st19 st17">434</text>
+				<text transform="matrix(0.9898 0 0 1 4880.1406 1470.7051)" class="st14 st15
+					st19 st17">434</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 5164.9668 1470.7051)" class="st14 st15 st19 st17">82</text>
+				<text transform="matrix(0.9898 0 0 1 5164.9668 1470.7051)" class="st14 st15
+					st19 st17">82</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 5439.123 1470.7051)" class="st14 st15 st19 st17">15</text>
+				<text transform="matrix(0.9898 0 0 1 5439.123 1470.7051)" class="st14 st15
+					st19 st17">15</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 5706.7129 1470.7051)" class="st14 st15 st19 st17">18</text>
+				<text transform="matrix(0.9898 0 0 1 5706.7129 1470.7051)" class="st14 st15
+					st19 st17">18</text>
 			</g>
 			<g>
-				<text transform="matrix(0.9898 0 0 1 5967.0117 1470.7051)" class="st14 st15 st19 st17">117</text>
+				<text transform="matrix(0.9898 0 0 1 5967.0117 1470.7051)" class="st14 st15
+					st19 st17">117</text>
 			</g>
 		</g>
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(0.9898 0 0 1 639.6738 1492.7051)" class="st14 st15 st19 st17">Total Valuation</text>
-					<text transform="matrix(0.9898 0 0 1 639.6738 1552.8574)" class="st14 st15 st19 st17">(100 Million $)</text>
+					<text transform="matrix(0.9898 0 0 1 639.6738 1492.7051)" class="st14 st15
+						st19 st17">Total Valuation</text>
+					<text transform="matrix(0.9898 0 0 1 639.6738 1552.8574)" class="st14 st15
+						st19 st17">(100 Million $)</text>
 				</g>
 			</g>
 		</g>
 		<g>
-			<text transform="matrix(0.9898 3.282684e-03 -3.316513e-03 1 6146.5479 5194.896)" class="st18 st15 st19">Recording</text>
-			<text transform="matrix(0.9898 3.282684e-03 -3.316513e-03 1 6175.8472 5255.1611)" class="st18 st15 st19"> Number</text>
+			<text transform="matrix(0.9898 3.282684e-03 -3.316513e-03 1 6146.5479
+				5194.896)" class="st18 st15 st19">Recording</text>
+			<text transform="matrix(0.9898 3.282684e-03 -3.316513e-03 1 6175.8472
+				5255.1611)" class="st18 st15 st19"> Number</text>
 		</g>
 		<g id="beizhu">
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 4109.1797 2786.9099)" class="st14 st15 st20 st21">DJI.com</text>
-					<text transform="matrix(1 0 0 1 3819.5891 2518.9187)" class="st14 st15 st20 st21">Xishanju</text>
-					<text transform="matrix(1 0 0 1 3021.0139 1930.1824)" class="st14 st15 st20 st21">izuche.com</text>
-					<text transform="matrix(1 0 0 1 3627.1506 4705.2344)" class="st14 st15 st20 st21">Ant Financial</text>
-					<text transform="matrix(1 0 0 1 2251.9875 2243.405)" class="st14 st15 st20 st21">Toutiao</text>
-					<text transform="matrix(1 0 0 1 2067.6331 4704.1064)" class="st14 st15 st20 st21">Alibaba Cloud</text>
-					<text transform="matrix(1 0 0 1 1837.1359 2365.324)" class="st14 st15 st20 st21">ZNB.com</text>
-					<text transform="matrix(1 0 0 1 5400.9521 2599.1785)" class="st14 st15 st20 st21">Meizu</text>
-					<text transform="matrix(1 0 0 1 3602.4397 4419.4941)" class="st14 st15 st20 st21">Lufax.com</text>
-					<text transform="matrix(1 0 0 1 3225.5354 2384.571)" class="st14 st15 st20 st21">Didi</text>
+					<text transform="matrix(1 0 0 1 4109.1797 2786.9099)" class="st14 st15 st20
+						st21">DJI.com</text>
+					<text transform="matrix(1 0 0 1 3819.5891 2518.9187)" class="st14 st15 st20
+						st21">Xishanju</text>
+					<text transform="matrix(1 0 0 1 3021.0139 1930.1824)" class="st14 st15 st20
+						st21">izuche.com</text>
+					<text transform="matrix(1 0 0 1 3627.1506 4705.2344)" class="st14 st15 st20
+						st21">Ant Financial</text>
+					<text transform="matrix(1 0 0 1 2251.9875 2243.405)" class="st14 st15 st20
+						st21">Toutiao</text>
+					<text transform="matrix(1 0 0 1 2067.6331 4704.1064)" class="st14 st15 st20
+						st21">Alibaba Cloud</text>
+					<text transform="matrix(1 0 0 1 1837.1359 2365.324)" class="st14 st15 st20
+						st21">ZNB.com</text>
+					<text transform="matrix(1 0 0 1 5400.9521 2599.1785)" class="st14 st15 st20
+						st21">Meizu</text>
+					<text transform="matrix(1 0 0 1 3602.4397 4419.4941)" class="st14 st15 st20
+						st21">Lufax.com</text>
+					<text transform="matrix(1 0 0 1 3225.5354 2384.571)" class="st14 st15 st20
+						st21">Didi</text>
 					<g>
-						<text transform="matrix(1 0 0 1 2117.0432 1913.4333)" class="st14 st15 st20 st21">Kuaishou</text>
+						<text transform="matrix(1 0 0 1 2117.0432 1913.4333)" class="st14 st15
+							st20 st21">Kuaishou</text>
 					</g>
 				</g>
 			</g>
 			<g>
 				<g>
 					<g>
-						<polyline class="st22" points="1999.2,2098.7 2091.7,2223.7 2196.5,2223.7 					"></polyline>
+						<polyline class="st22" points="1999.2,2098.7 2091.7,2223.7 2196.5,2223.7"></polyline>
 						<g>
-							<path class="st23" d="M2196.1,2230.9c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S2192.1,2230.9,2196.1,2230.9
-							z"></path>
+							<path class="st23"
+								d="M2196.1,2230.9c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S2192.1,2230.9,2196.1,2230.9
+								z"></path>
 						</g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="1898.2,2008.5 1983.7,1902.7 2088.4,1902.7 					"></polyline>
+						<polyline class="st22" points="1898.2,2008.5 1983.7,1902.7 2088.4,1902.7"></polyline>
 						<g>
-							<path class="st23" d="M2088.1,1910c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2s-7.2,3.3-7.2,7.2S2084.1,1910,2088.1,1910z"></path>
+							<path class="st23"
+								d="M2088.1,1910c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2s-7.2,3.3-7.2,7.2S2084.1,1910,2088.1,1910z"></path>
 						</g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="2795.2,2098.7 2986.5,2365.3 3164.3,2365.3 					"></polyline>
+						<polyline class="st22" points="2795.2,2098.7 2986.5,2365.3 3164.3,2365.3"></polyline>
 						<g>
-							<path class="st23" d="M3163.9,2372.5c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S3159.9,2372.5,3163.9,2372.5
-							z"></path>
+							<path class="st23"
+								d="M3163.9,2372.5c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S3159.9,2372.5,3163.9,2372.5
+								z"></path>
 						</g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="3872.4,2640.5 3965,2765.6 4069.7,2765.6 					"></polyline>
+						<polyline class="st22" points="3872.4,2640.5 3965,2765.6 4069.7,2765.6"></polyline>
 						<g>
-							<path class="st23" d="M4069.4,2772.8c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S4065.4,2772.8,4069.4,2772.8
-							z"></path>
+							<path class="st23"
+								d="M4069.4,2772.8c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S4065.4,2772.8,4069.4,2772.8
+								z"></path>
 						</g>
 					</g>
 				</g>
@@ -979,22 +1098,24 @@
 					<g>
 						<line class="st22" x1="1696.5" y1="2343.8" x2="1792.5" y2="2343.8"></line>
 						<g>
-							<path class="st23" d="M1792.1,2351.1c4,0,7.2-3.3,7.2-7.2c0-4-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2
-							C1784.8,2347.9,1788,2351.1,1792.1,2351.1z"></path>
+							<path class="st23"
+								d="M1792.1,2351.1c4,0,7.2-3.3,7.2-7.2c0-4-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2
+								C1784.8,2347.9,1788,2351.1,1792.1,2351.1z"></path>
 						</g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="2828.7,2001 2907.9,1914.6 2979.7,1914.6 					"></polyline>
+						<polyline class="st22" points="2828.7,2001 2907.9,1914.6 2979.7,1914.6"></polyline>
 						<g>
-							<path class="st23" d="M2979.3,1921.8c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2s-7.2,3.3-7.2,7.2S2975.3,1921.8,2979.3,1921.8z"></path>
+							<path class="st23"
+								d="M2979.3,1921.8c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2s-7.2,3.3-7.2,7.2S2975.3,1921.8,2979.3,1921.8z"></path>
 						</g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="3579.4,2623.6 3691.5,2504 3763.3,2504 					"></polyline>
+						<polyline class="st22" points="3579.4,2623.6 3691.5,2504 3763.3,2504"></polyline>
 						<g>
 							<circle class="st23" cx="3762.9" cy="2504" r="7.2"></circle>
 						</g>
@@ -1002,7 +1123,7 @@
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="5203,2643.6 5252.2,2581.5 5359.6,2581.5 					"></polyline>
+						<polyline class="st22" points="5203,2643.6 5252.2,2581.5 5359.6,2581.5"></polyline>
 						<g>
 							<circle class="st23" cx="5359.2" cy="2581.5" r="7.2"></circle>
 						</g>
@@ -1010,16 +1131,17 @@
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="1706,4929.8 1907.3,4686.5 2025.9,4686.5 					"></polyline>
+						<polyline class="st22" points="1706,4929.8 1907.3,4686.5 2025.9,4686.5"></polyline>
 						<g>
-							<path class="st23" d="M2025.5,4693.9c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S2021.5,4693.9,2025.5,4693.9
-							z"></path>
+							<path class="st23"
+								d="M2025.5,4693.9c4,0,7.2-3.3,7.2-7.2s-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2S2021.5,4693.9,2025.5,4693.9
+								z"></path>
 						</g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="3307,4927.2 3466.2,4685.5 3589,4685.5 					"></polyline>
+						<polyline class="st22" points="3307,4927.2 3466.2,4685.5 3589,4685.5"></polyline>
 						<g>
 							<circle class="st23" cx="3588.6" cy="4685.5" r="7.2"></circle>
 						</g>
@@ -1027,29 +1149,35 @@
 				</g>
 				<g>
 					<g>
-						<polyline class="st22" points="3335.3,4359 3428.9,4409.5 3551.6,4409.5 					"></polyline>
+						<polyline class="st22" points="3335.3,4359 3428.9,4409.5 3551.6,4409.5"></polyline>
 						<g>
-							<path class="st23" d="M3551.2,4416.7c4,0,7.2-3.3,7.2-7.2c0-4-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2
-							C3544,4413.5,3547.3,4416.7,3551.2,4416.7z"></path>
+							<path class="st23"
+								d="M3551.2,4416.7c4,0,7.2-3.3,7.2-7.2c0-4-3.3-7.2-7.2-7.2c-4,0-7.2,3.3-7.2,7.2
+								C3544,4413.5,3547.3,4416.7,3551.2,4416.7z"></path>
 						</g>
 					</g>
 				</g>
 			</g>
 		</g>
 		<g id="legend_1_">
-			<path class="st24" d="M6331.9,621.2H4525.6c-69,0-125-56-125-125V281.4c0-69,56-125,125-125h1806.3c69,0,125,56,125,125v214.8
-			C6456.9,565.2,6400.9,621.2,6331.9,621.2z"></path>
+			<path class="st24"
+				d="M6331.9,621.2H4525.6c-69,0-125-56-125-125V281.4c0-69,56-125,125-125h1806.3c69,0,125,56,125,125v214.8
+				C6456.9,565.2,6400.9,621.2,6331.9,621.2z"></path>
 			<g>
 				<g transform="translate(0,0)">
 					<circle class="st25" cx="5122.8" cy="484.2" r="101.5"></circle>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 5546.3359 311.6799)" class="st26 st15 st27">Color</text>
-					<text transform="matrix(1 0 0 1 5546.3359 361.6799)" class="st26 st15 st27"> ( the company founding years)</text>
+					<text transform="matrix(1 0 0 1 5546.3359 311.6799)" class="st26 st15
+						st27">Color</text>
+					<text transform="matrix(1 0 0 1 5546.3359 361.6799)" class="st26 st15
+						st27"> ( the company founding years)</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 4503.7334 311.6799)" class="st26 st15 st27 st17">Size</text>
-					<text transform="matrix(1 0 0 1 4503.7334 361.6799)" class="st26 st15 st27"> ( the company valuation  100 million $)</text>
+					<text transform="matrix(1 0 0 1 4503.7334 311.6799)" class="st26 st15 st27
+						st17">Size</text>
+					<text transform="matrix(1 0 0 1 4503.7334 361.6799)" class="st26 st15
+						st27"> ( the company valuation 100 million $)</text>
 				</g>
 				<g>
 					<g>
@@ -1264,18 +1392,21 @@
 								<g transform="translate(27,-35.71428571)">
 									<g>
 										<g>
-											<text transform="matrix(1 0 0 1 6046.9482 529.3942)" class="st228 st15 st229">10</text>
+											<text transform="matrix(1 0 0 1 6046.9482 529.3942)" class="st228
+												st15 st229">10</text>
 										</g>
 									</g>
 								</g>
 								<g transform="translate(27,-71.42857143)">
 									<g>
-										<text transform="matrix(1 0 0 1 5751.5752 565.1085)" class="st228 st15 st229">20</text>
+										<text transform="matrix(1 0 0 1 5751.5752 565.1085)" class="st228 st15
+											st229">20</text>
 									</g>
 								</g>
 								<g transform="translate(27,-71.42857143)">
 									<g>
-										<text transform="matrix(1 0 0 1 5544.2832 565.1085)" class="st228 st15 st229">25</text>
+										<text transform="matrix(1 0 0 1 5544.2832 565.1085)" class="st228 st15
+											st229">25</text>
 									</g>
 								</g>
 							</g>
@@ -1284,67 +1415,57 @@
 				</g>
 				<circle class="st25" cx="4560.5" cy="484.2" r="18.2"></circle>
 				<g>
-					<text transform="matrix(0.9998 -1.982704e-02 1.982704e-02 0.9998 5206.6597 494.4773)" class="st230 st15 st231">1600</text>
+					<text transform="matrix(0.9998 -1.982704e-02 1.982704e-02 0.9998 5206.6597
+						494.4773)" class="st230 st15 st231">1600</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 4593.7373 493.6799)" class="st230 st15 st229">0</text>
+					<text transform="matrix(1 0 0 1 4593.7373 493.6799)" class="st230 st15
+						st229">0</text>
 				</g>
 			</g>
 		</g>
 		<g>
-			<text transform="matrix(0.9901 0 0 1 220.1108 278.2627)" class="st14 st15 st232">The Unicorns Of </text>
-			<text transform="matrix(0.9901 0 0 1 220.1108 397.0386)" class="st14 st15 st232">Chinese Internet Companies </text>
+			<!-- <text transform="matrix(0.9901 0 0 1 220.1108 278.2627)" class="st14 st15 st232">The Unicorns Of </text>
+			<text transform="matrix(0.9901 0 0 1 220.1108 397.0386)" class="st14 st15 st232">Chinese Internet Companies </text> -->
 		</g>
 	</g>
 	<g id="circle">
 		<g id="text">
 			<g>
 				<circle class="st233" cx="4938.9" cy="4358.4" r="29.1" data="平安医保科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="4895.4" cy="4325.3" r="25.5" data="联影医疗"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4934.5" cy="4912.5" r="24.7" data="微医"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4912.3" cy="4400.4" r="20.6" data="复宏汉霖"></circle>
-
 			</g>
 			<g>
 				<circle class="st239" cx="4918.1" cy="4064.5" r="20.1" data="杰华生物"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4937.2" cy="4310.5" r="18.8" data="药明明码"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="4930.2" cy="2066.1" r="17.8" data="好大夫在线"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4918.1" cy="4642.6" r="17.3" data="医联"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="4905.4" cy="2041.6" r="17" data="春雨医生"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="4893.8" cy="4367.8" r="17" data="天境生物"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4935.6" cy="2626.6" r="16.9" data="妙手医生"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="4937.9" cy="2032.3" r="16.9" data="诺禾致源"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4919" cy="2099" r="16.9" data="零氪科技"></circle>
@@ -1352,115 +1473,89 @@
 			</g>
 			<g>
 				<circle class="st242" cx="4918.1" cy="3496" r="16.7" data="安翰光电"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4916.1" cy="2654" r="16.7" data="碳云智能"></circle>
-
 			</g>
 			<g>
 				<circle class="st243" cx="4907.6" cy="4943.8" r="16.7" data="丁香园"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4902.2" cy="2623.6" r="16.7" data="七乐康"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4893.1" cy="4913.7" r="16.7" data="禾连健康"></circle>
-
 			</g>
 			<g>
 				<circle class="st244" cx="4896.4" cy="2074" r="16.7" data="企鹅杏仁"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4918.1" cy="3204.4" r="16.7" data="香港亚洲医疗"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="3866.2" cy="2637" r="42.5" data="大疆无人机"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="3807.3" cy="2604.9" r="24.7" data="优必选"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="3821.4" cy="2685.9" r="23.9" data="柔宇科技"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st233" cx="3853.4" cy="2072.8" rx="19.8" ry="19.8" data="寒武纪"></ellipse>
+				<ellipse class="st233" cx="3853.4" cy="2072.8" rx="19.8" ry="19.8"
+					data="寒武纪"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st246" cx="3843.1" cy="2580.3" r="18.8" data="奥比中光"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="3807" cy="2647.1" r="17.5" data="酷开"></circle>
-
 			</g>
 			<g>
 				<circle class="st242" cx="3842.1" cy="3777.7" r="16.7" data="好享家"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="3826.5" cy="2048.3" r="16.7" data="Ninebot纳恩博"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="3842.1" cy="4351.4" r="16.7" data="微鲸科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="3573.2" cy="2062.6" r="19.7" data="乐元素"></circle>
-
 			</g>
 			<g>
 				<circle class="st247" cx="3573.2" cy="2634.6" r="17.7" data="西山居"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2766.8" cy="2066.3" r="65.4" data="滴滴出行"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2697.8" cy="2001.4" r="29.3" data="车好多集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2775.4" cy="4348.9" r="25.4" data="威马汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="2782.8" cy="2152.3" r="22.1" data="奇点汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2782" cy="2628.5" r="22.1" data="小鹏汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="2780.8" cy="3769.2" r="21.5" data="Byton拜腾汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2772" cy="4918.4" r="21.5" data="大搜车"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="2736.8" cy="4322.7" r="21.2" data="游侠汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st248" cx="2823.7" cy="2001.5" r="20.7" data="首汽租车"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2843.2" cy="2106" r="20.6" data="地平线"></circle>
-
 			</g>
 			<g>
 				<g data="ofo小黄车">
@@ -1470,175 +1565,136 @@
 			</g>
 			<g>
 				<circle class="st233" cx="2758.9" cy="4390.8" r="19.8" data="哈啰出行"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="2764.8" cy="1960.2" r="19.4" data="理想汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st242" cx="2741.4" cy="2624.2" r="18.9" data="银隆新能源"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="2740" cy="4894.5" r="18.5" data="时空电动"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2709.5" cy="2145.1" r="18.5" data="电咖汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="2772.4" cy="4305.2" r="18.5" data="爱驰汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="2733.7" cy="4362.3" r="18.4" data="途虎养车"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="2844.1" cy="2034.6" r="18.1" data="小马智行Pony.ai"></circle>
-
 			</g>
 			<g>
 				<circle class="st249" cx="2762.4" cy="2922.4" r="18" data="新特汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2773" cy="4879.1" r="17.8" data="曹操出行"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2758.9" cy="4955.5" r="17.8" data="天际汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2685.8" cy="2047.1" r="17.8" data="ETCP停车"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2796.2" cy="4386.8" r="17.8" data="斑马智行"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="2741.5" cy="3767.9" r="17.8" data="博郡汽车"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="2756.6" cy="3800.2" r="17.8" data="康众汽车配件"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2735" cy="4929.8" r="17.3" data="零跑科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="2755.5" cy="2657.4" r="17.3" data="巴图鲁"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="2793.4" cy="4950.4" r="17.1" data="微宏动力"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2762.4" cy="3496" r="17" data="斑马快跑"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2816.2" cy="2132.1" r="16.9" data="首汽约车"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2789" cy="1987.1" r="16.9" data="花生好车"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2744.7" cy="2145.3" r="16.7" data="出门问问"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="2741.8" cy="1988.1" r="16.7" data="人人车"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="2848.8" cy="2069.1" r="16.7" data="Momenta"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="2698.5" cy="2111.7" r="16.7" data="图森未来"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="6014.3" cy="2068.6" r="24.7" data="OYO酒店"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="5974.4" cy="2054.2" r="17.7" data="途家网"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="6008.1" cy="2645.9" r="17.4" data="KLOOK客路旅行"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="5977.8" cy="2089.2" r="17.4" data="古北水镇"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="5982.7" cy="2622.8" r="16.9" data="要出发周边游"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="5999.1" cy="2030.1" r="16.7" data="马蜂窝"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="3305.1" cy="4922.2" r="106.7" data="蚂蚁金服"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="3326.8" cy="4359" r="55.4" data="陆金所"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st246" cx="3318.4" cy="2066.4" rx="41.2" ry="41.2" data="京东数科"></ellipse>
+				<ellipse class="st246" cx="3318.4" cy="2066.4" rx="41.2" ry="41.2"
+					data="京东数科"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st25" cx="3317" cy="2628.6" r="39.3" data="微众银行"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="3254.1" cy="2023.6" r="36.1" data="比特大陆"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="3316.7" cy="3789.2" r="28.8" data="苏宁金融"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="3315.1" cy="2135.1" r="27.7" data="借贷宝"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="3250" cy="4328" r="27.4" data="金融壹账通"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st233" cx="3345.5" cy="2009.9" rx="21.7" ry="21.7" data="度小满金融"></ellipse>
+				<ellipse class="st233" cx="3345.5" cy="2009.9" rx="21.7" ry="21.7"
+					data="度小满金融"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st250" cx="3252.5" cy="4376.2" r="20.9" data="银联商务"></circle>
-
 			</g>
 			<g>
 				<circle class="st239" cx="3280" cy="3755.6" r="20.7" data="汇通达"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="3259.2" cy="2078.5" r="19.2" data="玖富"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="3356" cy="2113" r="18.8" data="网信理财"></circle>
@@ -1646,7 +1702,6 @@
 			</g>
 			<g>
 				<circle class="st242" cx="3216.4" cy="4833.5" r="18.8" data="挖财"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="3306" cy="2008.5" r="18" data="闪银奇异"></circle>
@@ -1654,51 +1709,41 @@
 			</g>
 			<g>
 				<circle class="st245" cx="3304.1" cy="1770.8" r="17.8" data="正奇金融"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="3284.8" cy="4299" r="17.7" data="点融网"></circle>
-
 			</g>
 			<g>
 				<circle class="st242" cx="3310.9" cy="5045.9" r="17.2" data="连连数字"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="3278.7" cy="2109.1" r="17.1" data="易生金服"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="3261.4" cy="2636.6" r="16.9" data="联易融"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="3276.1" cy="2666.7" r="16.7" data="随手记"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="3369.7" cy="2039.7" r="16.7" data="人人贷"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="3369.8" cy="4817.2" r="16.7" data="嘉楠耘智Canaan"></circle>
-
 			</g>
 			<g>
 				<circle class="st251" cx="4649.2" cy="4642.6" r="19.7" data="新潮传媒"></circle>
-
 			</g>
 			<g>
 				<circle class="st252" cx="4649.2" cy="4920.3" r="17.9" data="盘石股份"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st253" cx="3054.4" cy="2070.2" rx="27.7" ry="27.7" data="链家网"></ellipse>
+				<ellipse class="st253" cx="3054.4" cy="2070.2" rx="27.7" ry="27.7"
+					data="链家网"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st237" cx="3014.7" cy="2037.4" r="23.9" data="自如网"></circle>
-
 			</g>
 			<g>
 				<g data="房多多">
@@ -1708,264 +1753,216 @@
 			</g>
 			<g>
 				<circle class="st239" cx="3017.4" cy="2618.5" r="18.8" data="土巴兔"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="3029.7" cy="2109.5" r="18.8" data="蛋壳公寓"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="3054.9" cy="2024.1" r="18.5" data="氪空间"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="3009.9" cy="2078.8" r="17.7" data="小猪短租"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="3035.2" cy="4351.4" r="17.7" data="魔方公寓"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="3035.2" cy="3777.7" r="16.9" data="艾佳生活"></circle>
+			</g>
+			<g>
+				<circle class="st249" cx="3035.2" cy="3204.4" r="16.7" data="Weave
+					Co-Living"></circle>
 
 			</g>
 			<g>
-				<circle class="st249" cx="3035.2" cy="3204.4" r="16.7" data="Weave Co-Living"></circle>
 
-			</g>
-			<g>
-
-				<ellipse transform="matrix(0.3162 -0.9487 0.9487 0.3162 1131.2266 5111.0771)" class="st249" cx="4111.3" cy="1770.8" rx="17.8" ry="17.8" data="谊品生鲜"></ellipse>
+				<ellipse transform="matrix(0.3162 -0.9487 0.9487 0.3162 1131.2266
+					5111.0771)" class="st249" cx="4111.3" cy="1770.8" rx="17.8" ry="17.8"
+					data="谊品生鲜"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st25" cx="4128.7" cy="4912.2" r="17.7" data="贝贝网"></circle>
-
 			</g>
 			<g>
 				<circle class="st254" cx="4111.2" cy="4642.6" r="16.9" data="1919酒类直供"></circle>
+			</g>
+			<g>
+				<path class="st246"
+					d="M4108.3,4923.4c9.2,0,16.7,7.5,16.7,16.7s-7.5,16.7-16.7,16.7s-16.7-7.5-16.7-16.7
+					S4099.1,4923.4,4108.3,4923.4z" data="婚礼纪"></path>
 
 			</g>
 			<g>
-				<path class="st246" d="M4108.3,4923.4c9.2,0,16.7,7.5,16.7,16.7s-7.5,16.7-16.7,16.7s-16.7-7.5-16.7-16.7
-				S4099.1,4923.4,4108.3,4923.4z" data="婚礼纪"></path>
-
-			</g>
-			<g>
-				<path class="st249" d="M4109.3,2065.1c9.2,0,16.7,7.5,16.7,16.7s-7.5,16.7-16.7,16.7s-16.7-7.5-16.7-16.7
-				S4100.1,2065.1,4109.3,2065.1z" data="禧云国际"></path>
+				<path class="st249"
+					d="M4109.3,2065.1c9.2,0,16.7,7.5,16.7,16.7s-7.5,16.7-16.7,16.7s-16.7-7.5-16.7-16.7
+					S4100.1,2065.1,4109.3,2065.1z" data="禧云国际"></path>
 
 			</g>
 			<g>
 				<circle class="st242" cx="4094.3" cy="4909.6" r="16.7" data="点我达"></circle>
-
 			</g>
 			<g>
-				<path class="st25" d="M4095.4,2034.6c9.2,0,16.7,7.5,16.7,16.7c0,9.2-7.5,16.7-16.7,16.7s-16.7-7.5-16.7-16.7
-				S4086.2,2034.6,4095.4,2034.6z" data="58到家"></path>
+				<path class="st25"
+					d="M4095.4,2034.6c9.2,0,16.7,7.5,16.7,16.7c0,9.2-7.5,16.7-16.7,16.7s-16.7-7.5-16.7-16.7
+					S4086.2,2034.6,4095.4,2034.6z" data="58到家"></path>
 
 			</g>
 			<g>
 				<circle class="st233" cx="4128.7" cy="2054.5" r="16.7" data="便利蜂"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1162.2" cy="2061.8" r="21.5" data="VIPKID"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1129" cy="2035.8" r="20.6" data="猿辅导"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1149.3" cy="2100.8" r="19.8" data="作业帮"></circle>
-
 			</g>
 			<g>
 				<circle class="st239" cx="1165.8" cy="2021.7" r="18.8" data="iTutorGroup集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="1151.5" cy="4357.9" r="18" data="掌门1对1"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1133.6" cy="4326.9" r="17.8" data="高顿网校"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1166.8" cy="4390.2" r="17.8" data="DaDa英语"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1173.3" cy="4329.6" r="17.7" data="轻轻家教"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1116.6" cy="4357.3" r="17" data="松鼠AI智适应教育"></circle>
-
 			</g>
 			<g>
 				<circle class="st253" cx="1186.6" cy="4361.6" r="16.9" data="沪江网校"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1132.5" cy="4386.9" r="16.7" data="一起作业"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="1184.7" cy="2092.5" r="16.7" data="慧科教育集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1155.4" cy="4300.1" r="16.7" data="学霸君"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1125.8" cy="2073" r="16.7" data="作业盒子"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1980.3" cy="2083.4" r="75.2" data="今日头条"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1893.3" cy="2006.7" r="40.8" data="快手"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1959.2" cy="3496" r="22.1" data="斗鱼直播"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1972.6" cy="4932.6" r="21.5" data="网易云音乐"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1980.1" cy="4347.4" r="21.3" data="喜马拉雅"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1901.3" cy="2137.7" r="20.6" data="一下科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="1972.4" cy="2646.7" r="20.6" data="大地影院"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="1939.6" cy="4340" r="20" data="灿星文化"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1987.1" cy="1989" r="19.6" data="知乎"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1942.5" cy="4905" r="19.3" data="淘票票"></circle>
-
 			</g>
 			<g>
 				<circle class="st251" cx="1943.3" cy="2620.1" r="18.8" data="荔枝FM"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1888" cy="2066" r="18.8" data="影谱科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="2067.6" cy="2051.5" r="17.8" data="快看漫画"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1950.5" cy="1995.5" r="17.5" data="一点资讯"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1889.9" cy="2101.8" r="17.1" data="罗辑思维"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="2021.4" cy="2001" r="16.9" data="太合音乐"></circle>
-
 			</g>
 			<g>
 				<circle class="st249" cx="1953" cy="4374" r="16.7" data="连尚文学"></circle>
-
 			</g>
 			<g>
 
-				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2985.679 2638.4497)" class="st242" cx="1692.1" cy="4923.3" rx="71.2" ry="71.2" data="阿里云"></ellipse>
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2985.679
+					2638.4497)" class="st242" cx="1692.1" cy="4923.3" rx="71.2" ry="71.2"
+					data="阿里云"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st25" cx="1702.5" cy="2057.3" r="25.4" data="商汤科技SenseTime"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1710.8" cy="4345.3" r="23.9" data="WeWork China"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1701" cy="2644.6" r="21.5" data="云从科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1657.8" cy="2045.1" r="21" data="优客工场"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1698.8" cy="2103.1" r="20.6" data="旷视MEGVII"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1667.2" cy="4340.7" r="19.9" data="依图科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="1722.9" cy="2017" r="19.8" data="奇安信集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1631.8" cy="2076.3" r="19.6" data="金山云"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1630.5" cy="4857.7" r="18.8" data="涂鸦智能"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st238" cx="1734.7" cy="2087.2" rx="18.6" ry="18.6" data="九次方大数据"></ellipse>
+				<ellipse class="st238" cx="1734.7" cy="2087.2" rx="18.6" ry="18.6"
+					data="九次方大数据"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st238" cx="1690.3" cy="3777.7" r="17.8" data="华云数据"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1682" cy="4375.5" r="17.8" data="UCloud"></circle>
-
 			</g>
 			<g>
 				<circle class="st243" cx="1685.2" cy="2017.7" r="17.8" data="软通动力"></circle>
-
 			</g>
 			<g>
 				<circle class="st243" cx="1690.3" cy="2344.3" r="17.8" data="猪八戒网"></circle>
-
 			</g>
 			<g>
 				<circle class="st249" cx="1647.8" cy="2110.1" r="17.7" data="秦淮数据"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1690.2" cy="5012.3" r="17.7" data="同盾科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1744.5" cy="2047.7" r="17.7" data="36氪集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1731" cy="2123" r="17.3" data="云知声"></circle>
@@ -1973,15 +1970,12 @@
 			</g>
 			<g>
 				<circle class="st25" cx="1619.7" cy="2041.6" r="17.3" data="明略数据"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1701.7" cy="1986.8" r="17.2" data="第四范式"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1729.2" cy="4843.2" r="17.1" data="数梦工场"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1668" cy="2081.7" r="17" data="特斯联"></circle>
@@ -1989,216 +1983,170 @@
 			</g>
 			<g>
 				<circle class="st246" cx="1672.7" cy="2618.6" r="16.9" data="汇桔网"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1674.7" cy="2131.6" r="16.7" data="GEO集奥聚合"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1652.2" cy="2007.8" r="16.7" data="纷享销客"></circle>
-
 			</g>
 			<g>
 				<circle class="st239" cx="1767.3" cy="2073.5" r="16.7" data="睿智科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="5456.1" cy="4351.4" r="17.7" data="Soul App"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="5456.1" cy="2062.6" r="14.4" data="脉脉"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1418" cy="2062.2" r="21.3" data="美菜网"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1395.7" cy="4324.7" r="20.6" data="小红书"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1428" cy="4350.2" r="20.6" data="爱回收"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="1433.1" cy="2099.4" r="18.8" data="每日优鲜"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="1389" cy="2034.6" r="18.8" data="中商惠民网"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="1416.5" cy="4387.6" r="18.5" data="找钢网"></circle>
-
 			</g>
 			<g>
 
-				<ellipse transform="matrix(0.7181 -0.696 0.696 0.7181 -2037.5206 1984.3112)" class="st238" cx="1430.5" cy="3507.1" rx="17.9" ry="17.9" data="良品铺子"></ellipse>
-
+				<ellipse transform="matrix(0.7181 -0.696 0.696 0.7181 -2037.5206 1984.3112)"
+					class="st238" cx="1430.5" cy="3507.1" rx="17.9" ry="17.9" data="良品铺子"></ellipse>
 			</g>
 			<g>
 				<circle class="st245" cx="1431.1" cy="2646.6" r="17.7" data="辣妈帮"></circle>
-
 			</g>
 			<g>
 				<circle class="st253" cx="1405" cy="2622.6" r="17.7" data="百果园"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st242" cx="1450" cy="2040.5" rx="17.4" ry="17.4" data="中粮我买网"></ellipse>
+				<ellipse class="st242" cx="1450" cy="2040.5" rx="17.4" ry="17.4"
+					data="中粮我买网"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st25" cx="1380.1" cy="2069.6" r="17.3" data="易久批"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st243" cx="1431.6" cy="4312.6" rx="17.2" ry="17.2" data="易果生鲜"></ellipse>
+				<ellipse class="st243" cx="1431.6" cy="4312.6" rx="17.2" ry="17.2"
+					data="易果生鲜"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st237" cx="1458" cy="2073.8" r="17" data="蜜芽宝贝"></circle>
-
 			</g>
 			<g>
 				<circle class="st252" cx="1421.9" cy="2021.1" r="16.8" data="金银岛"></circle>
-
 			</g>
 			<g>
-				<ellipse class="st241" cx="1450.9" cy="4379.8" rx="16.7" ry="16.7" data="返利网"></ellipse>
+				<ellipse class="st241" cx="1450.9" cy="4379.8" rx="16.7" ry="16.7"
+					data="返利网"></ellipse>
 
 			</g>
 			<g>
 				<circle class="st245" cx="1418.1" cy="4920.3" r="16.7" data="执御信息"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1397.6" cy="2098.7" r="16.7" data="转转"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="1404.5" cy="3483.5" r="16.7" data="卷皮网"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="1392.5" cy="4361.8" r="16.7" data="毒APP"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="2228.2" cy="4351.4" r="24.2" data="WiFi万能钥匙"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="2240.2" cy="2073.6" r="18.4" data="APUS麒麟合盛"></circle>
-
 			</g>
 			<g>
 				<circle class="st241" cx="2214.2" cy="2049.7" r="17" data="网易有道"></circle>
-
 			</g>
 			<g>
 				<circle class="st233" cx="5725.1" cy="3777.7" r="18.4" data="苏宁体育"></circle>
-
 			</g>
 			<g>
 				<circle class="st246" cx="4380.1" cy="4920.3" r="40.8" data="菜鸟网络"></circle>
-
 			</g>
 			<g>
 				<circle class="st249" cx="4398" cy="2067.9" r="34.3" data="京东物流"></circle>
-
 			</g>
 			<g>
 				<circle class="st249" cx="4380.1" cy="2922.4" r="26" data="满帮集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4396.9" cy="4357.9" r="23.3" data="达达"></circle>
-
 			</g>
 			<g>
 				<circle class="st237" cx="4363.1" cy="4328.3" r="21.7" data="易商红木"></circle>
-
 			</g>
 			<g>
 				<circle class="st239" cx="4380.1" cy="3777.7" r="20.7" data="汇通达"></circle>
-
 			</g>
 			<g>
 				<circle class="st251" cx="4397.8" cy="2641.2" r="20.7" data="跨越速运"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4380.1" cy="4064.5" r="18.2" data="日日顺物流"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4380.1" cy="3204.4" r="17.8" data="普泰集团"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4380.1" cy="4642.6" r="17.8" data="驹马物流"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4361.7" cy="2627.5" r="17.7" data="货拉拉"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4378.2" cy="4394" r="17.4" data="ANE安能物流"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4355.8" cy="2038" r="17.3" data="运立方"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4400.4" cy="4317.6" r="17.2" data="安鲜达物流"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4357.6" cy="4366.5" r="17" data="壹米滴答"></circle>
-
 			</g>
 			<g>
 				<circle class="st240" cx="4366.3" cy="2661.8" r="16.9" data="丰巢科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st238" cx="4347" cy="2070.9" r="16.7" data="G7汇通天下"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4383.9" cy="2018.8" r="16.7" data="云鸟配送"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="4359.9" cy="2101.9" r="16.7" data="快狗打车"></circle>
-
 			</g>
 			<g>
 				<circle class="st250" cx="4387.9" cy="2605.1" r="16.7" data="越海物流"></circle>
-
 			</g>
 			<g>
 				<circle class="st255" cx="2497.2" cy="2062.6" r="17.1" data="农信互联"></circle>
-
 			</g>
 			<g>
 				<circle class="st255" cx="5196.8" cy="2643.6" r="25.2" data="魅族"></circle>
-
 			</g>
 			<g>
 				<circle class="st25" cx="5187.1" cy="2062.6" r="17.2" data="智米科技"></circle>
-
 			</g>
 			<g>
 				<circle class="st245" cx="5165.7" cy="2615.2" r="17" data="努比亚Nubia"></circle>
-
 			</g>
 		</g>
 	</g>
@@ -2244,7 +2192,8 @@
 </article>
 
     <footer>
-    <img class="footer__image logo-density" src="/assets/images/logo_density.png" alt="DensityDesign logo">
+    <img class="footer__image logo-density" src="/assets/images/logo_density.png" alt="DensityDesign
+        logo">
     <img class="footer__image logo-poli" src="/assets/images/logo_poli.png" alt="Politecnico di Milano logo">
     <div class="footer__item">
         <h6 class="footer__title">Project by</h6>
@@ -2256,31 +2205,20 @@
         </ul>
     </div>
     <div class="footer__item">
-        <h6 class="footer__title">Faculty</h6>
+        <h6 class="footer__title">Directed by</h6>
         <ul class="footer__list">
-            <li>Paolo Ciuccarelli</li>
-            <li>Stefano Mandato</li>
             <li>Michele Mauri</li>
-            <li>Simone Vantini</li>
-            <li>Salvatore Zingale</li>
         </ul>
     </div>
     <div class="footer__item">
-        <h6 class="footer__title">Teaching Assistants</h6>
+        <h6 class="footer__title">Collaborator</h6>
         <ul class="footer__list">
-            <li>Ángeles Briones</li>
-            <li>Gabriele Colombo</li>
-            <li>Jacopo Di Iorio</li>
-            <li>Tommaso Elli</li>
-            <li>Beatrice Gobbo</li>
-            <li>Michele Invernizzi</li>
-            <li>Ginevra Terenghi</li>
+            <li>Sha Heming</li>
         </ul>
     </div>
 </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
     
     <script src="https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/1.4.4/scrollama.min.js"
@@ -2288,8 +2226,8 @@
     <script src="/assets/js/scroll.js" charset="utf-8"></script>
     
     <script src="/assets/js/main.js" charset="utf-8"></script>
-    <script src="/assets/js/custom-scripts.js" charset="utf-8"></script>
-    <script src="/assets/js/d3.min.js" charset="utf-8"></script>
+    
+    
 </body>
 
 </html>

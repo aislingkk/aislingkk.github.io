@@ -9,14 +9,14 @@
     <!-- Meta tags for social networks -->
     <meta property="og:title" content="How about the scale and financial round of the Chinese Internet Unicorns?">
     <meta property="og:description" content="Short description of the document for the meta tags (limit to 150 characters, longer will be cut by search engines)">
-    <meta property="og:image" content="https://densitydesign.github.iohttp://localhost:4000/assets/images/covers/stock03_cover.png">
+    <meta property="og:image" content="https://densitydesign.github.iohttp://localhost:4000/assets/images/covers/unicorn2.png">
     <meta property="og:url" content="https://densitydesign.github.iohttp://localhost:4000/question07">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400,700" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
         href="/assets/images/favicons/favicon144.png">
@@ -33,40 +33,44 @@
 
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/custom-styles.css">
+   
 </head>
 
 <body>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/d3.min.js" charset="utf-8"></script>
+    <script src="/assets/js/custom-scripts.js" charset="utf-8"></script>
     <nav>
     <div class="nav__background"></div>
     <div class="nav__background"></div>
     <div class="nav__container">
         
-        <img class="nav__background-image" src="/assets/images/covers/alexaranking_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/alexa.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock01_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/stock01.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock02_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/stock02.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/stock03.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/founder.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/unicorn.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/unicorn2.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/word.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/word2.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/map.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/tencent.png" alt="Preview visualization of research question">
         
-        <img class="nav__background-image" src="/assets/images/covers/stock03_cover.png" alt="Preview visualization of research question">
+        <img class="nav__background-image" src="/assets/images/covers/ali.png" alt="Preview visualization of research question">
         
         <div class="index">
-            <h3 class="display index__heading index__title">Chinese Internet Company</h3>
+            <h3 class="display index__heading index__title">Data Visualization of Chinese Internet Company</h3>
             <p class="index__heading index__link"><a href="/">Introduction</a></p>
             <h4 class="index__heading index__subtitle">research questions</h4>
             <ul class="index__list">
@@ -108,15 +112,15 @@
                 </li>
                 
                 <li class="index__item">
-                    <a href="/question10.html" > word-all2 </a>
+                    <a href="/question10.html" > How about the historical registration situation of Chinese Internet companies? </a>
                 </li>
                 
                 <li class="index__item">
-                    <a href="/question11.html" > alibabagroup </a>
+                    <a href="/question11.html" > How about the China's leading Internet company of Tencent? </a>
                 </li>
                 
                 <li class="index__item">
-                    <a href="/question12.html" > tencent </a>
+                    <a href="/question12.html" > How about the China's leading Internet company of Alibaba Group? </a>
                 </li>
                 
             </ul>
@@ -150,9 +154,10 @@
 <main class="question__visualization">
     <div id="visualization07">
     <div id="unicorn02">
-        <svg version="1.1" 
-	xmlns="http://www.w3.org/2000/svg" 
-	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 5440.3 3302.8" style="enable-background:new 0 0 5440.3 3302.8;" xml:space="preserve">
+        <svg version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 5440.3
+	3302.8" style="enable-background:new 0 0 5440.3 3302.8;" xml:space="preserve">
 	<style type="text/css">
 	.st0{fill:#F7F7F7;}
 	.st1{fill:none;stroke:#000000;stroke-width:0.9035;stroke-linecap:square;stroke-linejoin:round;}
@@ -414,95 +419,114 @@
 			<line class="st1" x1="5358.2" y1="3105.6" x2="5358.2" y2="3109.7"></line>
 			<g transform="translate(-2207.5,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2859.3965 1812.6743)" class="st2 st3 st4 st5">30-50</text>
+					<text transform="matrix(1 0 0 1 2859.3965 1812.6743)" class="st2 st3 st4
+						st5">30-50</text>
 				</g>
 			</g>
 			<g transform="translate(-1661.875,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2844.0122 1812.6743)" class="st2 st3 st4 st5">50-100</text>
+					<text transform="matrix(1 0 0 1 2844.0122 1812.6743)" class="st2 st3 st4
+						st5">50-100</text>
 				</g>
 			</g>
 			<g transform="translate(-1116.25,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2829.9092 1812.6743)" class="st2 st3 st4 st5">100-150</text>
+					<text transform="matrix(1 0 0 1 2829.9092 1812.6743)" class="st2 st3 st4
+						st5">100-150</text>
 				</g>
 			</g>
 			<g transform="translate(-570.625,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2826.7354 1812.6743)" class="st2 st3 st4 st5">150-300</text>
+					<text transform="matrix(1 0 0 1 2826.7354 1812.6743)" class="st2 st3 st4
+						st5">150-300</text>
 				</g>
 			</g>
 			<g transform="translate(-25,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2822.2803 1812.6743)" class="st2 st3 st4 st5">300-500</text>
+					<text transform="matrix(1 0 0 1 2822.2803 1812.6743)" class="st2 st3 st4
+						st5">300-500</text>
 				</g>
 			</g>
 			<g transform="translate(520.625,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2807.2329 1812.6743)" class="st2 st3 st4 st5">500-1000</text>
+					<text transform="matrix(1 0 0 1 2807.2329 1812.6743)" class="st2 st3 st4
+						st5">500-1000</text>
 				</g>
 			</g>
 			<g transform="translate(1066.25,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2786.8862 1812.6743)" class="st2 st3 st4 st5">1000-2000</text>
+					<text transform="matrix(1 0 0 1 2786.8862 1812.6743)" class="st2 st3 st4
+						st5">1000-2000</text>
 				</g>
 			</g>
 			<g transform="translate(1611.875,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2868.9902 1812.6743)" class="st2 st3 st4 st5">2000</text>
+					<text transform="matrix(1 0 0 1 2868.9902 1812.6743)" class="st2 st3 st4
+						st5">2000</text>
 				</g>
 			</g>
 			<g transform="translate(2157.5,1308)">
 				<g>
-					<text transform="matrix(1 0 0 1 2845.7881 1812.6743)" class="st2 st3 st4 st5">nodata</text>
+					<text transform="matrix(1 0 0 1 2845.7881 1812.6743)" class="st2 st3 st4
+						st5">nodata</text>
 				</g>
 			</g>
 		</g>
 		<g transform="translate(0,0)">
 			<g transform="translate(-2458,-1250.11367255)">
 				<g>
-					<text transform="matrix(1 0 0 1 2668.1941 2398.1372)" class="st2 st3 st4 st5">Angel round</text>
+					<text transform="matrix(1 0 0 1 2668.1941 2398.1372)" class="st2 st3 st4
+						st5">Angel round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-907.52508078)">
 				<g>
-					<text transform="matrix(1 0 0 1 2788.8044 2335.2024)" class="st2 st3 st4 st5">A round</text>
+					<text transform="matrix(1 0 0 1 2788.8044 2335.2024)" class="st2 st3 st4
+						st5">A round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-564.93648901)">
 				<g>
-					<text transform="matrix(1 0 0 1 2786.4026 2272.2681)" class="st2 st3 st4 st5">B round</text>
+					<text transform="matrix(1 0 0 1 2786.4026 2272.2681)" class="st2 st3 st4
+						st5">B round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,-222.34789724)">
 				<g>
-					<text transform="matrix(1 0 0 1 2786.2473 2209.334)" class="st2 st3 st4 st5">C round</text>
+					<text transform="matrix(1 0 0 1 2786.2473 2209.334)" class="st2 st3 st4
+						st5">C round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,120.24069453)">
 				<g>
-					<text transform="matrix(1 0 0 1 2781.426 2146.3997)" class="st2 st3 st4 st5">D round</text>
+					<text transform="matrix(1 0 0 1 2781.426 2146.3997)" class="st2 st3 st4
+						st5">D round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,462.8292863)">
 				<g>
-					<text transform="matrix(1 0 0 1 2786.6311 2083.4653)" class="st2 st3 st4 st5">E round</text>
+					<text transform="matrix(1 0 0 1 2786.6311 2083.4653)" class="st2 st3 st4
+						st5">E round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,805.41787808)">
 				<g>
-					<text transform="matrix(1 0 0 1 2789.3743 2020.5308)" class="st2 st3 st4 st5">F round</text>
+					<text transform="matrix(1 0 0 1 2789.3743 2020.5308)" class="st2 st3 st4
+						st5">F round</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1148.00646985)">
 				<g>
-					<text transform="matrix(1 0 0 1 2767.1384 -275.2037)" class="st2 st3 st4 st5">Strategy</text>
+					<text transform="matrix(1 0 0 1 2767.1384 -275.2037)" class="st2 st3 st4
+						st5">Strategy</text>
 				</g>
 			</g>
 			<g transform="translate(-2458,1148.00646985)">
 				<g>
-					<text transform="matrix(1 0 0 1 2668.1941 1957.6514)" class="st2 st3 st6 st7">Company Scale</text>
-					<text transform="matrix(1 0 0 1 2815.5676 2019.6514)" class="st2 st3 st6 st7">(person)</text>
+					<text transform="matrix(1 0 0 1 2668.1941 1957.6514)" class="st2 st3 st6
+						st7">Company Scale</text>
+					<text transform="matrix(1 0 0 1 2815.5676 2019.6514)" class="st2 st3 st6
+						st7">(person)</text>
 				</g>
 			</g>
 		</g>
@@ -529,20 +553,26 @@
 		</g>
 		<g id="legend">
 			<g>
-				<path class="st11" d="M5169.6,517.1H3623.9c-49.8,0-90.1-40.4-90.1-90.1V217.2c0-49.8,40.4-90.1,90.1-90.1h1545.6
-				c49.8,0,90.1,40.4,90.1,90.1V427C5259.7,476.8,5219.4,517.1,5169.6,517.1z"></path>
+				<path class="st11"
+					d="M5169.6,517.1H3623.9c-49.8,0-90.1-40.4-90.1-90.1V217.2c0-49.8,40.4-90.1,90.1-90.1h1545.6
+					c49.8,0,90.1,40.4,90.1,90.1V427C5259.7,476.8,5219.4,517.1,5169.6,517.1z"></path>
 				<g>
 					<g transform="translate(0,0)">
 
-						<ellipse transform="matrix(0.4473 -0.8944 0.8944 0.4473 1928.4948 3925.4126)" class="st12" cx="4140.2" cy="402.4" rx="85.2" ry="85.2"></ellipse>
+						<ellipse transform="matrix(0.4473 -0.8944 0.8944 0.4473 1928.4948
+							3925.4126)" class="st12" cx="4140.2" cy="402.4" rx="85.2" ry="85.2"></ellipse>
 					</g>
 					<g>
-						<text transform="matrix(1 0 0 1 4495.4497 257.3909)" class="st13 st3 st14">Color</text>
-						<text transform="matrix(1 0 0 1 4495.4497 299.3909)" class="st13 st3 st14"> ( the company founding years)</text>
+						<text transform="matrix(1 0 0 1 4495.4497 257.3909)" class="st13 st3
+							st14">Color</text>
+						<text transform="matrix(1 0 0 1 4495.4497 299.3909)" class="st13 st3
+							st14"> ( the company founding years)</text>
 					</g>
 					<g>
-						<text transform="matrix(1 0 0 1 3620.3762 257.3909)" class="st13 st3 st14">Size</text>
-						<text transform="matrix(1 0 0 1 3620.3762 299.3909)" class="st13 st3 st14"> ( the company valuation  100 million $)</text>
+						<text transform="matrix(1 0 0 1 3620.3762 257.3909)" class="st13 st3
+							st14">Size</text>
+						<text transform="matrix(1 0 0 1 3620.3762 299.3909)" class="st13 st3
+							st14"> ( the company valuation 100 million $)</text>
 					</g>
 					<g>
 						<g>
@@ -757,18 +787,21 @@
 									<g transform="translate(27,-35.71428571)">
 										<g>
 											<g>
-												<text transform="matrix(1 0 0 1 4911.2827 445.861)" class="st215 st3 st216">10</text>
+												<text transform="matrix(1 0 0 1 4911.2827 445.861)" class="st215 st3
+													st216">10</text>
 											</g>
 										</g>
 									</g>
 									<g transform="translate(27,-71.42857143)">
 										<g>
-											<text transform="matrix(1 0 0 1 4663.3716 481.5753)" class="st215 st3 st216">20</text>
+											<text transform="matrix(1 0 0 1 4663.3716 481.5753)" class="st215 st3
+												st216">20</text>
 										</g>
 									</g>
 									<g transform="translate(27,-71.42857143)">
 										<g>
-											<text transform="matrix(1 0 0 1 4489.3882 481.5753)" class="st215 st3 st216">25</text>
+											<text transform="matrix(1 0 0 1 4489.3882 481.5753)" class="st215 st3
+												st216">25</text>
 										</g>
 									</g>
 								</g>
@@ -777,27 +810,30 @@
 					</g>
 					<circle class="st12" cx="3668" cy="402.2" r="15.3"></circle>
 					<g>
-						<text transform="matrix(0.9998 -1.982704e-02 1.982704e-02 0.9998 4210.3525 410.8161)" class="st217 st3 st218">1600</text>
+						<text transform="matrix(0.9998 -1.982704e-02 1.982704e-02 0.9998 4210.3525
+							410.8161)" class="st217 st3 st218">1600</text>
 					</g>
 					<g>
-						<text transform="matrix(1 0 0 1 3695.9172 410.1467)" class="st217 st3 st216">0</text>
+						<text transform="matrix(1 0 0 1 3695.9172 410.1467)" class="st217 st3
+							st216">0</text>
 					</g>
 				</g>
 			</g>
 			<g>
-				<text transform="matrix(0.9901 0 0 1 168.9038 229.3438)" class="st2 st3 st219">The Unicorns Of </text>
-				<text transform="matrix(0.9901 0 0 1 168.9038 329.0303)" class="st2 st3 st219">Chinese Internet Companies </text>
+				<!-- <text transform="matrix(0.9901 0 0 1 168.9038 229.3438)" class="st2 st3 st219">The Unicorns Of </text>
+				<text transform="matrix(0.9901 0 0 1 168.9038 329.0303)" class="st2 st3 st219">Chinese Internet Companies </text> -->
 			</g>
 		</g>
 	</g>
 	<g id="circle">
 		<g>
 			<circle class="st220" cx="1307" cy="1390.4" r="28.1" data="平安医保科技"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(9.801099e-03 -1 1 9.801099e-03 1475.3909 4272.0938)" class="st224" cx="2894.8" cy="1391.1" rx="24.1" ry="24.1" data="联影医疗"></ellipse>
+			<ellipse transform="matrix(9.801099e-03 -1 1 9.801099e-03 1475.3909
+				4272.0938)" class="st224" cx="2894.8" cy="1391.1" rx="24.1" ry="24.1"
+				data="联影医疗"></ellipse>
 
 		</g>
 		<g>
@@ -806,11 +842,9 @@
 		</g>
 		<g>
 			<circle class="st225" cx="2386.4" cy="2795.3" r="18.2" data="复宏汉霖"></circle>
-
 		</g>
 		<g>
 			<circle class="st226" cx="4026" cy="1702.1" r="17.6" data="杰华生物"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1839" cy="834" r="15.9" data="药明明码"></circle>
@@ -818,35 +852,27 @@
 		</g>
 		<g>
 			<circle class="st228" cx="5111.9" cy="1972.2" r="14.7" data="好大夫在线"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="1851.5" cy="2258.8" r="13.9" data="医联"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="2349.3" cy="2241.4" r="13.5" data="春雨医生"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1273.3" cy="795" r="13.5" data="天境生物"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1834.5" cy="1987.6" r="13.4" data="妙手医生"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="4528.2" cy="1937.9" r="13.4" data="诺禾致源"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="1798.2" cy="1705.5" r="13.4" data="零氪科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="2366.8" cy="2261.6" r="13.2" data="安翰光电"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="3450" cy="1694" r="13.2" data="碳云智能"></circle>
@@ -854,203 +880,156 @@
 		</g>
 		<g>
 
-			<ellipse transform="matrix(1 -3.649418e-03 3.649418e-03 1 -3.0164 10.7115)" class="st230" cx="2933.6" cy="831.9" rx="13.2" ry="13.2" data="丁香园"></ellipse>
-
+			<ellipse transform="matrix(1 -3.649418e-03 3.649418e-03 1 -3.0164 10.7115)"
+				class="st230" cx="2933.6" cy="831.9" rx="13.2" ry="13.2" data="丁香园"></ellipse>
 		</g>
 		<g>
 			<circle class="st225" cx="3990.4" cy="2236.3" r="13.2" data="七乐康"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="1305.4" cy="919.2" r="13.2" data="禾连健康"></circle>
-
 		</g>
 		<g>
 			<circle class="st231" cx="1847.6" cy="1695.2" r="13.2" data="企鹅杏仁"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="3483.8" cy="797.2" r="13.2" data="香港亚洲医疗"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="2886.7" cy="862.5" r="42.8" data="大疆无人机"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2390.2" cy="1945.7" r="23" data="优必选"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2890.6" cy="927.3" r="22.1" data="柔宇科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1316.9" cy="891.2" r="17.1" data="寒武纪"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="1820" cy="1685.9" r="15.9" data="奥比中光"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="1815.9" cy="2281.6" r="14.4" data="酷开"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="2352.8" cy="839.1" r="13.2" data="好享家"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2354" cy="1943" r="13.2" data="Ninebot纳恩博"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2942.8" cy="1982" r="13.2" data="微鲸科技"></circle>
-
 		</g>
 		<g>
 			<ellipse class="st232" cx="2939.9" cy="1396.4" rx="17" ry="17" data="乐元素"></ellipse>
-
 		</g>
 		<g>
 			<circle class="st234" cx="2386.7" cy="1987.6" r="14.6" data="西山居"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="4565" cy="851.4" r="67.2" data="滴滴出行"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2912.4" cy="796" r="28.4" data="车好多集团"></circle>
-
 		</g>
 		<g>
-			<circle class="st232" cx="2384.6" cy="2229.1" r="23.9" data="
-			威马汽车
-		">			</circle>
-
+			<circle class="st232" cx="2384.6" cy="2229.1" r="23.9" data="威马汽车"> </circle>
 		</g>
 		<g>
 			<circle class="st12" cx="2326.3" cy="1961.7" r="20" data="奇点汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1302.4" cy="811.6" r="20" data="小鹏汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1295.4" cy="1682.4" r="19.3" data="Byton拜腾汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="4002" cy="1995.2" r="19.3" data="大搜车"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2367.2" cy="2827.1" r="19" data="游侠汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st235" cx="5118.1" cy="1705.1" r="18.4" data="首汽租车"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1826.6" cy="1719.4" r="18.2" data="地平线"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2366.6" cy="1720.4" r="18.2" data="ofo小黄车"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="3986.2" cy="886.3" r="17.1" data="哈啰出行"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1227.6" cy="860.3" r="16.7" data="理想汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="2348.5" cy="1691.3" r="16.1" data="银隆新能源"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="3411.8" cy="899.2" r="15.5" data="时空电动"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2869.7" cy="806.7" r="15.5" data="电咖汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="732" cy="1133.8" r="15.5" data="爱驰汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="2367.4" cy="889.5" r="15.4" data="途虎养车"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="732" cy="2532" r="15.1" data="小马智行Pony.ai"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(0.9999 -1.723118e-02 1.723118e-02 0.9999 -15.2145 50.4954)" class="st236" cx="2922.6" cy="908.1" rx="14.9" ry="14.9" data="新特汽车"></ellipse>
+			<ellipse transform="matrix(0.9999 -1.723118e-02 1.723118e-02 0.9999 -15.2145
+				50.4954)" class="st236" cx="2922.6" cy="908.1" rx="14.9" ry="14.9"
+				data="新特汽车"></ellipse>
 
 		</g>
 		<g>
 			<circle class="st227" cx="2959.5" cy="1675" r="14.7" data="曹操出行"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2358.8" cy="1431.1" r="14.7" data="天际汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2922.5" cy="1447.4" r="14.7" data="ETCP停车"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2403.6" cy="850.6" r="14.7" data="斑马智行"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="2925.6" cy="1367.9" r="14.7" data="博郡汽车"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="4492.3" cy="889" r="14.7" data="康众汽车配件"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2895.1" cy="2279.9" r="13.9" data="零跑科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2345.8" cy="1405.6" r="13.9" data="巴图鲁"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="4554.6" cy="1931.5" r="13.7" data="微宏动力"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2340.4" cy="900.1" r="13.5" data="斑马快跑"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2905.5" cy="2204.2" r="13.4" data="首汽约车"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2377.4" cy="1685.8" r="13.4" data="花生好车"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2857.7" cy="1704.8" r="13.2" data="出门问问"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="3467" cy="2230.6" r="13.2" data="人人车"></circle>
@@ -1058,82 +1037,64 @@
 		</g>
 		<g>
 			<circle class="st220" cx="1261.3" cy="2517.1" r="13.2" data="Momenta"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2361.6" cy="814.2" r="13.2" data="图森未来"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="4489.9" cy="2173.1" r="23" data="OYO酒店"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="4540.8" cy="929.6" r="14.6" data="途家网"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2340.3" cy="2540" r="14.2" data="KLOOK客路旅行"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="4571.4" cy="2328.6" r="14.1" data="古北水镇"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="3961.9" cy="867.9" r="13.4" data="要出发周边游"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="3477.9" cy="2254.6" r="13.2" data="马蜂窝"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="4551.4" cy="2532" r="110.7" data="蚂蚁金服"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="3476.1" cy="866.6" r="56.6" data="陆金所"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="4553.5" cy="1986.5" r="41.4" data="京东数科"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2954.5" cy="1728.9" r="39.4" data="微众银行"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="1260" cy="1433.7" r="35.8" data="比特大陆"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(2.628499e-02 -0.9997 0.9997 2.628499e-02 1131.3125 4493.0952)" class="st228" cx="2872.1" cy="1665.8" rx="27.9" ry="27.9" data="
-			苏宁金融
-		">			</ellipse>
+			<ellipse transform="matrix(2.628499e-02 -0.9997 0.9997 2.628499e-02 1131.3125
+				4493.0952)" class="st228" cx="2872.1" cy="1665.8" rx="27.9" ry="27.9" data="苏宁金融">
+			</ellipse>
 
 		</g>
 		<g>
 			<circle class="st12" cx="1261.2" cy="833.2" r="26.5" data="借贷宝"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1255.9" cy="1371.8" r="26.2" data="金融壹账通"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1315.2" cy="1437.3" r="19.5" data="度小满金融"></circle>
-
 		</g>
 		<g>
 			<circle class="st237" cx="4510" cy="917.2" r="18.6" data="银联商务"></circle>
-
 		</g>
 		<g>
 			<circle class="st226" cx="3988.8" cy="850.9" r="18.4" data="汇通达"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="3428" cy="811.6" r="16.4" data="玖富"></circle>
@@ -1141,241 +1102,188 @@
 		</g>
 		<g>
 			<circle class="st12" cx="2385.7" cy="2513.8" r="15.9" data="网信理财"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="3983.7" cy="1965.2" r="15.9" data="挖财"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2418.8" cy="2247.5" r="14.9" data="闪银奇异"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2923.5" cy="2276.3" r="14.7" data="正奇金融"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2844.6" cy="823.4" r="14.6" data="点融网"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="2948.9" cy="2821.1" r="13.8" data="连连数字"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1263.7" cy="1691.5" r="13.7" data="易生金服"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1273.2" cy="1737" r="13.4" data="联易融"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="3471.5" cy="1987.8" r="13.2" data="随手记"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="5094.1" cy="1993.7" r="13.2" data="人人贷"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="1810.6" cy="1404.7" r="13.2" data="嘉楠耘智Canaan"></circle>
-
 		</g>
 		<g>
 			<circle class="st238" cx="4567.7" cy="1699.5" r="17" data="新潮传媒"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(1 -2.145892e-03 2.145892e-03 1 -1.7829 6.3572)" class="st239" cx="2961.6" cy="834" rx="14.8" ry="14.8" data="盘石股份"></ellipse>
-
+			<ellipse transform="matrix(1 -2.145892e-03 2.145892e-03 1 -1.7829 6.3572)"
+				class="st239" cx="2961.6" cy="834" rx="14.8" ry="14.8" data="盘石股份"></ellipse>
 		</g>
 		<g>
 			<circle class="st240" cx="4531.3" cy="2334.6" r="26.5" data="链家网"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="1305.4" cy="853.6" r="22.1" data="自如网"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="5081.8" cy="1691.9" r="20.3" data="房多多"></circle>
-
 		</g>
 		<g>
 			<circle class="st226" cx="2360.9" cy="1971.3" r="15.9" data="土巴兔"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2387.1" cy="2018.1" r="15.9" data="蛋壳公寓"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2930.3" cy="1956.1" r="15.5" data="氪空间"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2361.2" cy="2001.9" r="14.6" data="小猪短租"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2944" cy="857.6" r="14.6" data="魔方公寓"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2345.2" cy="2277.3" r="13.4" data="艾佳生活"></circle>
-
 		</g>
 		<g>
-			<circle class="st236" cx="1255.6" cy="1717.2" r="13.2" data="Weave Co-Living"></circle>
+			<circle class="st236" cx="1255.6" cy="1717.2" r="13.2" data="Weave
+				Co-Living"></circle>
 
 		</g>
 		<g>
 			<circle class="st236" cx="4551.4" cy="1133.8" r="14.7" data="谊品生鲜"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="4002.1" cy="1723.8" r="14.6" data="贝贝网"></circle>
-
 		</g>
 		<g>
 			<circle class="st241" cx="1824.4" cy="2255.2" r="13.4" data="1919酒类直供"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2410.9" cy="2001.4" r="13.2" data="婚礼纪"></circle>
-
 		</g>
 		<g>
 			<circle class="st236" cx="732" cy="2250.4" r="13.2" data="禧云国际"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="3472.1" cy="1420.7" r="13.2" data="点我达"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2988.5" cy="888.1" r="13.2" data="58到家"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="1830.8" cy="1387.6" r="13.2" data="便利蜂"></circle>
-
 		</g>
 		<g>
-			<ellipse class="st233" cx="2891" cy="1434.8" rx="19.3" ry="19.3" data="VIPKID"></ellipse>
+			<ellipse class="st233" cx="2891" cy="1434.8" rx="19.3" ry="19.3"
+				data="VIPKID"></ellipse>
 
 		</g>
 		<g>
 			<circle class="st232" cx="4603.7" cy="2325.8" r="18.2" data="猿辅导"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2351.1" cy="2794.8" r="17.1" data="作业帮"></circle>
-
 		</g>
 		<g>
 			<circle class="st226" cx="4022" cy="2546.9" r="15.9" data="iTutorGroup集团"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="2956.7" cy="2793.5" r="14.9" data="掌门1对1"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2899.8" cy="2518.6" r="14.7" data="高顿网校"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="3450.9" cy="1968.9" r="14.7" data="DaDa英语"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="3454.2" cy="2269.2" r="14.6" data="轻轻家教"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="4627.9" cy="2305.3" r="13.5" data="松鼠AI智适应教育"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(1 -2.183391e-03 2.183391e-03 1 -3.0919 6.3787)" class="st240" cx="2919.9" cy="1419.3" rx="13.4" ry="13.4" data="沪江网校"></ellipse>
-
+			<ellipse transform="matrix(1 -2.183391e-03 2.183391e-03 1 -3.0919 6.3787)"
+				class="st240" cx="2919.9" cy="1419.3" rx="13.4" ry="13.4" data="沪江网校"></ellipse>
 		</g>
 		<g>
 			<circle class="st232" cx="4484.8" cy="2274.2" r="13.2" data="一起作业"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="3448.7" cy="2521.6" r="13.2" data="慧科教育集团"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2350.5" cy="2214.7" r="13.2" data="学霸君"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2411.6" cy="1974.9" r="13.2" data="作业盒子"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="4567.6" cy="2237" r="77.6" data="今日头条"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="2900.9" cy="2794.9" r="40.9" data="快手"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="3995.5" cy="2522.6" r="20" data="斗鱼直播"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="1285.3" cy="2539" r="19.3" data="网易云音乐"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="3990.6" cy="1692.1" r="19.1" data="喜马拉雅"></circle>
-
 		</g>
 		<g>
 			<ellipse class="st224" cx="2924" cy="2540.9" rx="18.2" ry="18.2" data="一下科技"></ellipse>
-
 		</g>
 		<g>
 			<circle class="st228" cx="2351.8" cy="2509.6" r="18.2" data="大地影院"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="2985.5" cy="855.5" r="17.4" data="灿星文化"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="3402.6" cy="868.1" r="16.9" data="知乎"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2396.5" cy="2544.4" r="16.5" data="淘票票"></circle>
-
 		</g>
 		<g>
 			<circle class="st238" cx="2374.1" cy="858.9" r="15.9" data="荔枝FM"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2395.3" cy="2267.4" r="15.9" data="影谱科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2857.2" cy="911.8" r="14.7" data="快看漫画"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2326.2" cy="2257" r="14.4" data="一点资讯"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2953" cy="806.8" r="13.7" data="罗辑思维"></circle>
@@ -1383,128 +1291,100 @@
 		</g>
 		<g>
 			<circle class="st12" cx="2951.6" cy="2277.7" r="13.4" data="太合音乐"></circle>
-
 		</g>
 		<g>
 			<circle class="st236" cx="1803.6" cy="873.7" r="13.2" data="连尚文学"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="4582.5" cy="1415.5" r="73.4" data="阿里云"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2960.3" cy="914.8" r="23.9" data="商汤科技SenseTime"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="4468" cy="2243.1" r="22.1" data="WeWork China"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2870.4" cy="1749" r="19.4" data="云从科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2907.7" cy="1636.5" r="18.7" data="优客工场"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="4479.9" cy="858.6" r="18.2" data="旷视MEGVII"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2372.5" cy="2291.6" r="17.3" data="依图科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st220" cx="2940.4" cy="2249.2" r="17.2" data="奇安信集团"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="4042.8" cy="873.5" r="16.9" data="金山云"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="1795.4" cy="2259.4" r="15.9" data="涂鸦智能"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="3431.4" cy="923.5" r="15.7" data="九次方大数据"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="3410.9" cy="837.6" r="14.7" data="华云数据"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="3460.1" cy="2806.7" r="14.7" data="UCloud"></circle>
-
 		</g>
 		<g>
 			<circle class="st230" cx="3469.3" cy="2540.4" r="14.7" data="软通动力"></circle>
-
 		</g>
 		<g>
 			<circle class="st230" cx="4031.8" cy="1978.7" r="14.7" data="猪八戒网"></circle>
-
 		</g>
 		<g>
 			<circle class="st236" cx="1813.8" cy="1968.7" r="14.6" data="秦淮数据"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="3456" cy="798.2" r="14.6" data="同盾科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="2892.4" cy="2228.9" r="14.5" data="36氪集团"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2383.2" cy="830.6" r="13.9" data="云知声"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2882" cy="2255.3" r="13.9" data="明略数据"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1277.6" cy="2250.4" r="13.8" data="第四范式"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1268.1" cy="1968.6" r="13.7" data="数梦工场"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1815.1" cy="1431.1" r="13.5" data="特斯联"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="4546.3" cy="1721.2" r="13.4" data="汇桔网"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(3.649602e-03 -1 1 3.649602e-03 2042.5757 3819.6643)" class="st232" cx="2938.1" cy="884.8" rx="13.2" ry="13.2" data="GEO集奥聚合"></ellipse>
+			<ellipse transform="matrix(3.649602e-03 -1 1 3.649602e-03 2042.5757
+				3819.6643)" class="st232" cx="2938.1" cy="884.8" rx="13.2" ry="13.2"
+				data="GEO集奥聚合"></ellipse>
 
 		</g>
 		<g>
 			<circle class="st12" cx="1281.4" cy="1711.7" r="13.2" data="纷享销客"></circle>
-
 		</g>
 		<g>
 			<circle class="st226" cx="4012.7" cy="871.6" r="13.2" data="睿智科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="732" cy="1409.7" r="14.6" data="Soul App"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="2340.9" cy="1987.6" r="9.8" data="脉脉"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="4497.7" cy="2303.7" r="19" data="美菜网"></circle>
@@ -1512,140 +1392,111 @@
 		</g>
 		<g>
 			<circle class="st233" cx="2341.3" cy="868.3" r="18.2" data="小红书"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="1841.3" cy="2228.3" r="18.2" data="爱回收"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2397.4" cy="880.6" r="15.9" data="每日优鲜"></circle>
-
 		</g>
 		<g>
 			<circle class="st233" cx="1809.2" cy="845.1" r="15.9" data="中商惠民网"></circle>
-
 		</g>
 		<g>
 			<circle class="st224" cx="4535.6" cy="1694.3" r="15.5" data="找钢网"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="4551.4" cy="2812" r="14.8" data="良品铺子"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2900.2" cy="1958.6" r="14.6" data="辣妈帮"></circle>
-
 		</g>
 		<g>
 			<circle class="st240" cx="1808.7" cy="2232" r="14.5" data="百果园"></circle>
-
 		</g>
 		<g>
 			<circle class="st229" cx="5083.3" cy="1968.6" r="14.1" data="中粮我买网"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="4012.6" cy="1957.5" r="13.9" data="易久批"></circle>
-
 		</g>
 		<g>
 			<circle class="st230" cx="2909.4" cy="2251.5" r="13.8" data="易果生鲜"></circle>
-
 		</g>
 		<g>
-			<ellipse class="st224" cx="3443.6" cy="2243.2" rx="13.5" ry="13.5" data="蜜芽宝贝"></ellipse>
+			<ellipse class="st224" cx="3443.6" cy="2243.2" rx="13.5" ry="13.5"
+				data="蜜芽宝贝"></ellipse>
 
 		</g>
 		<g>
 			<circle class="st239" cx="2367.6" cy="2536.8" r="13.3" data="金银岛"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="2394.6" cy="1706.1" r="13.2" data="返利网"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2916.4" cy="1981.3" r="13.2" data="执御信息"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2890.2" cy="1984.5" r="13.2" data="转转"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="3996" cy="1400.7" r="13.2" data="卷皮网"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="1287.9" cy="1986.7" r="13.2" data="毒APP"></circle>
-
 		</g>
 		<g>
 			<circle class="st232" cx="2382" cy="1402" r="22.5" data="WiFi万能钥匙"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2332.7" cy="2011.3" r="15.4" data="APUS麒麟合盛"></circle>
-
 		</g>
 		<g>
 			<circle class="st228" cx="2963.9" cy="877.6" r="13.6" data="网易有道"></circle>
-
 		</g>
 		<g>
 
-			<ellipse transform="matrix(4.347582e-03 -1 1 4.347582e-03 1506.8921 4369.0747)" class="st220" cx="2947.5" cy="1427.8" rx="15.4" ry="15.4" data="苏宁体育"></ellipse>
+			<ellipse transform="matrix(4.347582e-03 -1 1 4.347582e-03 1506.8921
+				4369.0747)" class="st220" cx="2947.5" cy="1427.8" rx="15.4" ry="15.4"
+				data="苏宁体育"></ellipse>
 
 		</g>
 		<g>
 			<circle class="st233" cx="4474.2" cy="1378.9" r="40.9" data="菜鸟网络"></circle>
-
 		</g>
 		<g>
 			<circle class="st236" cx="1265.8" cy="893.5" r="34" data="京东物流"></circle>
-
 		</g>
 		<g>
 			<circle class="st236" cx="4488.4" cy="1443" r="24.7" data="满帮集团"></circle>
-
 		</g>
 		<g>
 			<ellipse class="st12" cx="2929.4" cy="2850.5" rx="21.4" ry="21.4" data="达达"></ellipse>
-
 		</g>
 		<g>
 			<circle class="st224" cx="4025.5" cy="841.5" r="19.5" data="易商红木"></circle>
-
 		</g>
 		<g>
 			<circle class="st226" cx="4013.7" cy="2257.7" r="18.4" data="汇通达"></circle>
-
 		</g>
 		<g>
 			<circle class="st238" cx="1834.7" cy="868.1" r="18.4" data="跨越速运"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="3451.1" cy="1401.4" r="15.3" data="日日顺物流"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="2904.5" cy="1749.6" r="14.7" data="普泰集团"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="3999.3" cy="819.5" r="14.7" data="驹马物流"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2906.3" cy="2007.2" r="14.6" data="货拉拉"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="4480.3" cy="2209" r="14.1" data="ANE安能物流"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2368.4" cy="2564.1" r="14" data="运立方"></circle>
@@ -1653,39 +1504,30 @@
 		</g>
 		<g>
 			<circle class="st227" cx="5092.3" cy="1724.3" r="13.8" data="安鲜达物流"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="4487.8" cy="827.8" r="13.5" data="壹米滴答"></circle>
-
 		</g>
 		<g>
 			<circle class="st227" cx="2326.7" cy="2226.7" r="13.4" data="丰巢科技"></circle>
-
 		</g>
 		<g>
 			<circle class="st225" cx="4014.2" cy="898" r="13.2" data="G7汇通天下"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="4568.6" cy="931.7" r="13.2" data="云鸟配送"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="2920" cy="2226.6" r="13.2" data="快狗打车"></circle>
-
 		</g>
 		<g>
 			<circle class="st237" cx="4015.5" cy="1418.6" r="13.2" data="越海物流"></circle>
-
 		</g>
 		<g>
 			<circle class="st242" cx="1836.1" cy="1413.9" r="13.6" data="农信互联"></circle>
-
 		</g>
 		<g>
 			<circle class="st242" cx="2893.6" cy="1712.9" r="23.6" data="魅族"></circle>
-
 		</g>
 		<g>
 			<circle class="st12" cx="1818.7" cy="896" r="13.8" data="智米科技"></circle>
@@ -1693,7 +1535,6 @@
 		</g>
 		<g>
 			<circle class="st232" cx="3469.8" cy="1712" r="13.5" data="努比亚Nubia"></circle>
-
 		</g>
 	</g>
 </svg>
@@ -1731,13 +1572,14 @@
 
 <h5 id="view-data-28kb"><a href="/assets/database/unicorn.csv">View Data (28kB)</a></h5>
 
-<p>The datasets were about the Chinese Internet company registration scope keywords, including the dimensions of word, frequency, year.</p>
+<p>The dataset included the element of company type, name (CH), latest financing time, total financing valuation (100 million$), latest financing round, keywords, company founding time, company Size(person), company based address, and founding year.</p>
 
     </div>
 </article>
 
     <footer>
-    <img class="footer__image logo-density" src="/assets/images/logo_density.png" alt="DensityDesign logo">
+    <img class="footer__image logo-density" src="/assets/images/logo_density.png" alt="DensityDesign
+        logo">
     <img class="footer__image logo-poli" src="/assets/images/logo_poli.png" alt="Politecnico di Milano logo">
     <div class="footer__item">
         <h6 class="footer__title">Project by</h6>
@@ -1749,31 +1591,20 @@
         </ul>
     </div>
     <div class="footer__item">
-        <h6 class="footer__title">Faculty</h6>
+        <h6 class="footer__title">Directed by</h6>
         <ul class="footer__list">
-            <li>Paolo Ciuccarelli</li>
-            <li>Stefano Mandato</li>
             <li>Michele Mauri</li>
-            <li>Simone Vantini</li>
-            <li>Salvatore Zingale</li>
         </ul>
     </div>
     <div class="footer__item">
-        <h6 class="footer__title">Teaching Assistants</h6>
+        <h6 class="footer__title">Collaborator</h6>
         <ul class="footer__list">
-            <li>Ángeles Briones</li>
-            <li>Gabriele Colombo</li>
-            <li>Jacopo Di Iorio</li>
-            <li>Tommaso Elli</li>
-            <li>Beatrice Gobbo</li>
-            <li>Michele Invernizzi</li>
-            <li>Ginevra Terenghi</li>
+            <li>Sha Heming</li>
         </ul>
     </div>
 </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
     
     <script src="https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/1.4.4/scrollama.min.js"
@@ -1781,8 +1612,8 @@
     <script src="/assets/js/scroll.js" charset="utf-8"></script>
     
     <script src="/assets/js/main.js" charset="utf-8"></script>
-    <script src="/assets/js/custom-scripts.js" charset="utf-8"></script>
-    <script src="/assets/js/d3.min.js" charset="utf-8"></script>
+    
+    
 </body>
 
 </html>

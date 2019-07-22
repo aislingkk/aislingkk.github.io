@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var svg2 = document.getElementById('svg-alexaranking02');
   document
     .querySelector('#svg-alexaranking01 > svg')
-    .setAttribute('style', 'width:150%;');
+    .setAttribute('style', 'width:130%;');
   document
     .querySelector('#svg-alexaranking02 > svg')
     .setAttribute('style', 'width:150%;');
